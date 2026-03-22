@@ -532,6 +532,40 @@ function analyzeSentiment(text) {
 // ROUTES - UTILITY
 // ============================================================================
 
+// Root endpoint
+app.get('/', (req, res) => {
+  res.json({
+    application: 'E-Food Recommendation System API',
+    version: '1.0.0',
+    status: 'online',
+    endpoints: {
+      health: '/api/health',
+      foods: {
+        list: '/api/foods/list',
+        search: '/api/foods/search?q=apple',
+        details: '/api/analyze/food/:foodName'
+      },
+      recommendations: '/api/recommend/similar/:foodName',
+      analysis: {
+        health_classify: 'POST /api/health/classify',
+        unhealthy_score: 'POST /api/score/unhealthy',
+        ingredient_analyze: 'POST /api/ingredients/analyze',
+        risk_predict: 'POST /api/risks/predict'
+      },
+      sentiment: {
+        analyze: 'POST /api/sentiment/analyze',
+        batch: 'POST /api/sentiment/batch'
+      },
+      database: {
+        contact: '/api/db/contact',
+        feedback: '/api/db/feedback',
+        community: '/api/db/community'
+      }
+    },
+    docs: 'Visit /api/health for server status'
+  });
+});
+
 app.get('/api/health', (req, res) => {
   res.json({
     status: 'healthy',
@@ -1007,6 +1041,26 @@ app.use((err, req, res, next) => {
 // 404 handler - must be last
 app.use((req, res) => {
   res.status(404).json({ error: 'Endpoint not found' });
+});
+
+
+// ============================================================================
+// 404 HANDLER
+// ============================================================================
+
+app.use((req, res) => {
+  res.status(404).json({
+    error: 'Endpoint not found',
+    requested_path: req.path,
+    method: req.method,
+    hint: 'Visit / or /api/health for available endpoints',
+    available_endpoints: {
+      root: '/',
+      health: '/api/health',
+      foods: '/api/foods/list',
+      search: '/api/foods/search?q=apple'
+    }
+  });
 });
 
 // ============================================================================
