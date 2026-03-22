@@ -3,7 +3,25 @@
  * All data is persisted to SQLite database instead of localStorage
  */
 
-const API_BASE = 'http://localhost:5000/api/db';
+// Get API URL at runtime (works in both dev and prod)
+function getAPIBase(): string {
+  // Check for environment variable first
+  const envUrl = import.meta.env.VITE_API_URL;
+  if (envUrl) {
+    return `${envUrl}/db`;
+  }
+  
+  // Development fallback
+  if (import.meta.env.DEV) {
+    return 'http://localhost:5000/api/db';
+  }
+  
+  // Production fallback - derive from current domain
+  // Assumes backend is on same root domain or specified via env
+  return '/api/db';
+}
+
+const API_BASE = getAPIBase();
 
 export const dbClient = {
   // ============================================================================
