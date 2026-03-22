@@ -1,0 +1,10 @@
+{
+  "buildCommand": "npm run build",
+  "outputDirectory": "dist",
+  "env": {
+    "VITE_API_URL": {
+      "description": "Backend API URL for production",
+      "default": "https://your-render-backend-name.onrender.com"
+    }
+  }
+}

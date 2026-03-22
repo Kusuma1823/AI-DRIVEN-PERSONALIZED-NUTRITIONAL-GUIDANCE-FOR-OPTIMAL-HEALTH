@@ -1,0 +1,895 @@
+food_id,food_name,category,ingredient_order,ingredient_name,ingredient_type,reason_if_unhealthy,health_concern_tag,ingredient_note
+1,Potato Chips,Snacks,1,Potatoes or Corn Base,Neutral,,,Main starch base of the snack.
+1,Potato Chips,Snacks,2,Vegetable Oil,Unhealthy,"Adds significant fat and calories, especially when repeatedly heated during processing.",Processed fat,
+1,Potato Chips,Snacks,3,Salt,Unhealthy,High sodium may increase blood pressure and fluid retention risk.,High sodium,
+1,Potato Chips,Snacks,4,Flavor Enhancers,Unhealthy,Can encourage overconsumption and often raise sodium load.,High sodium/additives,
+1,Potato Chips,Snacks,5,Spices,Neutral,,,Used for flavoring.
+1,Potato Chips,Snacks,6,Antioxidants,Neutral,,,Added to preserve shelf life of oils.
+2,Nacho Chips,Snacks,1,Potatoes or Corn Base,Neutral,,,Main starch base of the snack.
+2,Nacho Chips,Snacks,2,Vegetable Oil,Unhealthy,"Adds significant fat and calories, especially when repeatedly heated during processing.",Processed fat,
+2,Nacho Chips,Snacks,3,Salt,Unhealthy,High sodium may increase blood pressure and fluid retention risk.,High sodium,
+2,Nacho Chips,Snacks,4,Flavor Enhancers,Unhealthy,Can encourage overconsumption and often raise sodium load.,High sodium/additives,
+2,Nacho Chips,Snacks,5,Spices,Neutral,,,Used for flavoring.
+2,Nacho Chips,Snacks,6,Antioxidants,Neutral,,,Added to preserve shelf life of oils.
+3,Cheese Puffs,Snacks,1,Sugar,Unhealthy,High added sugar can spike blood glucose and increase calorie intake with low satiety.,High sugar,
+3,Cheese Puffs,Snacks,2,Glucose Syrup,Unhealthy,Rapidly absorbed sugar source that may raise blood sugar quickly.,High glycemic load,
+3,Cheese Puffs,Snacks,3,Refined Wheat Flour,Unhealthy,Low fiber and highly refined; may not support blood sugar control well.,Refined carb,
+3,Cheese Puffs,Snacks,4,Palm Oil,Unhealthy,High in saturated fat and commonly used in processed foods.,Saturated fat,
+3,Cheese Puffs,Snacks,5,Cocoa Powder,Neutral,,,Used for flavor; can be fine in moderate amounts.
+3,Cheese Puffs,Snacks,6,Soy Lecithin,Neutral,,,Emulsifier commonly used for texture and consistency.
+4,Salted Crackers,Snacks,1,Potatoes or Corn Base,Neutral,,,Main starch base of the snack.
+4,Salted Crackers,Snacks,2,Vegetable Oil,Unhealthy,"Adds significant fat and calories, especially when repeatedly heated during processing.",Processed fat,
+4,Salted Crackers,Snacks,3,Salt,Unhealthy,High sodium may increase blood pressure and fluid retention risk.,High sodium,
+4,Salted Crackers,Snacks,4,Flavor Enhancers,Unhealthy,Can encourage overconsumption and often raise sodium load.,High sodium/additives,
+4,Salted Crackers,Snacks,5,Spices,Neutral,,,Used for flavoring.
+4,Salted Crackers,Snacks,6,Antioxidants,Neutral,,,Added to preserve shelf life of oils.
+5,Instant Noodles,Ready Meals,1,Refined Wheat Flour,Unhealthy,Refined base with lower fiber and faster digestion.,Refined carb,
+5,Instant Noodles,Ready Meals,2,Palm Oil,Unhealthy,"Common processed fat source, often raising saturated fat content.",Saturated fat,
+5,Instant Noodles,Ready Meals,3,Salt,Unhealthy,Excess sodium may affect blood pressure and kidney health.,High sodium,
+5,Instant Noodles,Ready Meals,4,Monosodium Glutamate,Unhealthy,May be a sensitivity trigger for some people and often comes with salty flavor profiles.,Additive sensitivity,
+5,Instant Noodles,Ready Meals,5,Dehydrated Vegetables,Healthy,,,Adds some micronutrients and flavor.
+5,Instant Noodles,Ready Meals,6,Spice Mix,Neutral,,,Used for taste and aroma.
+6,Cup Noodles,Ready Meals,1,Refined Wheat Flour,Unhealthy,Refined base with lower fiber and faster digestion.,Refined carb,
+6,Cup Noodles,Ready Meals,2,Palm Oil,Unhealthy,"Common processed fat source, often raising saturated fat content.",Saturated fat,
+6,Cup Noodles,Ready Meals,3,Salt,Unhealthy,Excess sodium may affect blood pressure and kidney health.,High sodium,
+6,Cup Noodles,Ready Meals,4,Monosodium Glutamate,Unhealthy,May be a sensitivity trigger for some people and often comes with salty flavor profiles.,Additive sensitivity,
+6,Cup Noodles,Ready Meals,5,Dehydrated Vegetables,Healthy,,,Adds some micronutrients and flavor.
+6,Cup Noodles,Ready Meals,6,Spice Mix,Neutral,,,Used for taste and aroma.
+7,Frozen Pizza,Frozen Foods,1,Refined Flour or Breadcrumbs,Unhealthy,Processed coating/base with lower fiber.,Refined carb,
+7,Frozen Pizza,Frozen Foods,2,Processed Cheese or Fat,Unhealthy,Can increase saturated fat and sodium.,Saturated fat/high sodium,
+7,Frozen Pizza,Frozen Foods,3,Salt,Unhealthy,Raises sodium content substantially.,High sodium,
+7,Frozen Pizza,Frozen Foods,4,Stabilizers,Neutral,,,Used to maintain texture.
+7,Frozen Pizza,Frozen Foods,5,Protein Source,Healthy,,,"Provides protein, depending on product quality."
+7,Frozen Pizza,Frozen Foods,6,Herbs and Seasonings,Neutral,,,Used for flavor.
+8,Chicken Nuggets,Frozen Foods,1,Refined Flour or Breadcrumbs,Unhealthy,Processed coating/base with lower fiber.,Refined carb,
+8,Chicken Nuggets,Frozen Foods,2,Processed Cheese or Fat,Unhealthy,Can increase saturated fat and sodium.,Saturated fat/high sodium,
+8,Chicken Nuggets,Frozen Foods,3,Salt,Unhealthy,Raises sodium content substantially.,High sodium,
+8,Chicken Nuggets,Frozen Foods,4,Stabilizers,Neutral,,,Used to maintain texture.
+8,Chicken Nuggets,Frozen Foods,5,Protein Source,Healthy,,,"Provides protein, depending on product quality."
+8,Chicken Nuggets,Frozen Foods,6,Herbs and Seasonings,Neutral,,,Used for flavor.
+9,Fish Fingers,Frozen Foods,1,Refined Flour or Breadcrumbs,Unhealthy,Processed coating/base with lower fiber.,Refined carb,
+9,Fish Fingers,Frozen Foods,2,Processed Cheese or Fat,Unhealthy,Can increase saturated fat and sodium.,Saturated fat/high sodium,
+9,Fish Fingers,Frozen Foods,3,Salt,Unhealthy,Raises sodium content substantially.,High sodium,
+9,Fish Fingers,Frozen Foods,4,Stabilizers,Neutral,,,Used to maintain texture.
+9,Fish Fingers,Frozen Foods,5,Protein Source,Healthy,,,"Provides protein, depending on product quality."
+9,Fish Fingers,Frozen Foods,6,Herbs and Seasonings,Neutral,,,Used for flavor.
+10,French Fries (Frozen),Frozen Foods,1,Refined Flour or Breadcrumbs,Unhealthy,Processed coating/base with lower fiber.,Refined carb,
+10,French Fries (Frozen),Frozen Foods,2,Processed Cheese or Fat,Unhealthy,Can increase saturated fat and sodium.,Saturated fat/high sodium,
+10,French Fries (Frozen),Frozen Foods,3,Salt,Unhealthy,Raises sodium content substantially.,High sodium,
+10,French Fries (Frozen),Frozen Foods,4,Stabilizers,Neutral,,,Used to maintain texture.
+10,French Fries (Frozen),Frozen Foods,5,Protein Source,Healthy,,,"Provides protein, depending on product quality."
+10,French Fries (Frozen),Frozen Foods,6,Herbs and Seasonings,Neutral,,,Used for flavor.
+11,Packaged Cookies,Bakery,1,Sugar,Unhealthy,High added sugar can spike blood glucose and increase calorie intake with low satiety.,High sugar,
+11,Packaged Cookies,Bakery,2,Glucose Syrup,Unhealthy,Rapidly absorbed sugar source that may raise blood sugar quickly.,High glycemic load,
+11,Packaged Cookies,Bakery,3,Refined Wheat Flour,Unhealthy,Low fiber and highly refined; may not support blood sugar control well.,Refined carb,
+11,Packaged Cookies,Bakery,4,Palm Oil,Unhealthy,High in saturated fat and commonly used in processed foods.,Saturated fat,
+11,Packaged Cookies,Bakery,5,Cocoa Powder,Neutral,,,Used for flavor; can be fine in moderate amounts.
+11,Packaged Cookies,Bakery,6,Soy Lecithin,Neutral,,,Emulsifier commonly used for texture and consistency.
+12,Chocolate Biscuits,Bakery,1,Sugar,Unhealthy,High added sugar can spike blood glucose and increase calorie intake with low satiety.,High sugar,
+12,Chocolate Biscuits,Bakery,2,Glucose Syrup,Unhealthy,Rapidly absorbed sugar source that may raise blood sugar quickly.,High glycemic load,
+12,Chocolate Biscuits,Bakery,3,Refined Wheat Flour,Unhealthy,Low fiber and highly refined; may not support blood sugar control well.,Refined carb,
+12,Chocolate Biscuits,Bakery,4,Palm Oil,Unhealthy,High in saturated fat and commonly used in processed foods.,Saturated fat,
+12,Chocolate Biscuits,Bakery,5,Cocoa Powder,Neutral,,,Used for flavor; can be fine in moderate amounts.
+12,Chocolate Biscuits,Bakery,6,Soy Lecithin,Neutral,,,Emulsifier commonly used for texture and consistency.
+13,Cream Cookies,Bakery,1,Sugar,Unhealthy,High added sugar can spike blood glucose and increase calorie intake with low satiety.,High sugar,
+13,Cream Cookies,Bakery,2,Glucose Syrup,Unhealthy,Rapidly absorbed sugar source that may raise blood sugar quickly.,High glycemic load,
+13,Cream Cookies,Bakery,3,Refined Wheat Flour,Unhealthy,Low fiber and highly refined; may not support blood sugar control well.,Refined carb,
+13,Cream Cookies,Bakery,4,Palm Oil,Unhealthy,High in saturated fat and commonly used in processed foods.,Saturated fat,
+13,Cream Cookies,Bakery,5,Cocoa Powder,Neutral,,,Used for flavor; can be fine in moderate amounts.
+13,Cream Cookies,Bakery,6,Soy Lecithin,Neutral,,,Emulsifier commonly used for texture and consistency.
+14,Sweetened Breakfast Cereal,Breakfast,1,Whole Grain Oats or Grain Base,Healthy,,,Can contribute fiber and longer satiety if present in meaningful amounts.
+14,Sweetened Breakfast Cereal,Breakfast,2,Sugar,Unhealthy,Raises added sugar content.,High sugar,
+14,Sweetened Breakfast Cereal,Breakfast,3,Malt Extract or Syrup,Unhealthy,Concentrated sweetener that may raise glycemic load.,High glycemic load,
+14,Sweetened Breakfast Cereal,Breakfast,4,Salt,Unhealthy,Packaged breakfast foods can still contain notable sodium.,High sodium,
+14,Sweetened Breakfast Cereal,Breakfast,5,Fortified Vitamins,Healthy,,,Added micronutrients may improve nutritional profile.
+14,Sweetened Breakfast Cereal,Breakfast,6,Flavoring,Neutral,,,Used for taste.
+15,Chocolate Cereal,Breakfast,1,Whole Grain Oats or Grain Base,Healthy,,,Can contribute fiber and longer satiety if present in meaningful amounts.
+15,Chocolate Cereal,Breakfast,2,Sugar,Unhealthy,Raises added sugar content.,High sugar,
+15,Chocolate Cereal,Breakfast,3,Malt Extract or Syrup,Unhealthy,Concentrated sweetener that may raise glycemic load.,High glycemic load,
+15,Chocolate Cereal,Breakfast,4,Salt,Unhealthy,Packaged breakfast foods can still contain notable sodium.,High sodium,
+15,Chocolate Cereal,Breakfast,5,Fortified Vitamins,Healthy,,,Added micronutrients may improve nutritional profile.
+15,Chocolate Cereal,Breakfast,6,Flavoring,Neutral,,,Used for taste.
+16,Granola Bar,Breakfast,1,Whole Grain Oats or Grain Base,Healthy,,,Can contribute fiber and longer satiety if present in meaningful amounts.
+16,Granola Bar,Breakfast,2,Sugar,Unhealthy,Raises added sugar content.,High sugar,
+16,Granola Bar,Breakfast,3,Malt Extract or Syrup,Unhealthy,Concentrated sweetener that may raise glycemic load.,High glycemic load,
+16,Granola Bar,Breakfast,4,Salt,Unhealthy,Packaged breakfast foods can still contain notable sodium.,High sodium,
+16,Granola Bar,Breakfast,5,Fortified Vitamins,Healthy,,,Added micronutrients may improve nutritional profile.
+16,Granola Bar,Breakfast,6,Flavoring,Neutral,,,Used for taste.
+17,Protein Bar,Breakfast,1,Whole Grain Oats or Grain Base,Healthy,,,Can contribute fiber and longer satiety if present in meaningful amounts.
+17,Protein Bar,Breakfast,2,Sugar,Unhealthy,Raises added sugar content.,High sugar,
+17,Protein Bar,Breakfast,3,Malt Extract or Syrup,Unhealthy,Concentrated sweetener that may raise glycemic load.,High glycemic load,
+17,Protein Bar,Breakfast,4,Salt,Unhealthy,Packaged breakfast foods can still contain notable sodium.,High sodium,
+17,Protein Bar,Breakfast,5,Fortified Vitamins,Healthy,,,Added micronutrients may improve nutritional profile.
+17,Protein Bar,Breakfast,6,Flavoring,Neutral,,,Used for taste.
+18,Fruit Yogurt,Dairy,1,Milk Solids,Healthy,,,Provide protein and calcium.
+18,Fruit Yogurt,Dairy,2,Sugar,Unhealthy,Raises added sugar content and calorie density.,High sugar,
+18,Fruit Yogurt,Dairy,3,Cream,Unhealthy,Can increase saturated fat load.,Saturated fat,
+18,Fruit Yogurt,Dairy,4,Stabilizers,Neutral,,,Used for consistency and shelf life.
+18,Fruit Yogurt,Dairy,5,Fruit Puree or Flavor,Neutral,,,"May add taste, though sometimes only in small amounts."
+18,Fruit Yogurt,Dairy,6,Cultures,Healthy,,,Beneficial in fermented dairy products like yogurt.
+19,Flavored Yogurt,Dairy,1,Milk Solids,Healthy,,,Provide protein and calcium.
+19,Flavored Yogurt,Dairy,2,Sugar,Unhealthy,Raises added sugar content and calorie density.,High sugar,
+19,Flavored Yogurt,Dairy,3,Cream,Unhealthy,Can increase saturated fat load.,Saturated fat,
+19,Flavored Yogurt,Dairy,4,Stabilizers,Neutral,,,Used for consistency and shelf life.
+19,Flavored Yogurt,Dairy,5,Fruit Puree or Flavor,Neutral,,,"May add taste, though sometimes only in small amounts."
+19,Flavored Yogurt,Dairy,6,Cultures,Healthy,,,Beneficial in fermented dairy products like yogurt.
+20,Processed Cheese Slices,Dairy,1,Milk Solids,Healthy,,,Provide protein and calcium.
+20,Processed Cheese Slices,Dairy,2,Sugar,Unhealthy,Raises added sugar content and calorie density.,High sugar,
+20,Processed Cheese Slices,Dairy,3,Cream,Unhealthy,Can increase saturated fat load.,Saturated fat,
+20,Processed Cheese Slices,Dairy,4,Stabilizers,Neutral,,,Used for consistency and shelf life.
+20,Processed Cheese Slices,Dairy,5,Fruit Puree or Flavor,Neutral,,,"May add taste, though sometimes only in small amounts."
+20,Processed Cheese Slices,Dairy,6,Cultures,Healthy,,,Beneficial in fermented dairy products like yogurt.
+21,Ice Cream Tub,Desserts,1,Milk Solids,Healthy,,,Provide protein and calcium.
+21,Ice Cream Tub,Desserts,2,Sugar,Unhealthy,Raises added sugar content and calorie density.,High sugar,
+21,Ice Cream Tub,Desserts,3,Cream,Unhealthy,Can increase saturated fat load.,Saturated fat,
+21,Ice Cream Tub,Desserts,4,Stabilizers,Neutral,,,Used for consistency and shelf life.
+21,Ice Cream Tub,Desserts,5,Fruit Puree or Flavor,Neutral,,,"May add taste, though sometimes only in small amounts."
+21,Ice Cream Tub,Desserts,6,Cultures,Healthy,,,Beneficial in fermented dairy products like yogurt.
+22,Chocolate Ice Cream Bar,Desserts,1,Milk Solids,Healthy,,,Provide protein and calcium.
+22,Chocolate Ice Cream Bar,Desserts,2,Sugar,Unhealthy,Raises added sugar content and calorie density.,High sugar,
+22,Chocolate Ice Cream Bar,Desserts,3,Cream,Unhealthy,Can increase saturated fat load.,Saturated fat,
+22,Chocolate Ice Cream Bar,Desserts,4,Stabilizers,Neutral,,,Used for consistency and shelf life.
+22,Chocolate Ice Cream Bar,Desserts,5,Fruit Puree or Flavor,Neutral,,,"May add taste, though sometimes only in small amounts."
+22,Chocolate Ice Cream Bar,Desserts,6,Cultures,Healthy,,,Beneficial in fermented dairy products like yogurt.
+23,Soft Drink Cola,Beverages,1,Carbonated Water,Neutral,,,Base liquid component.
+23,Soft Drink Cola,Beverages,2,High Fructose Corn Syrup,Unhealthy,"Very high added sugar load; may contribute to insulin resistance, weight gain, and fatty liver risk when consumed often.",High sugar,
+23,Soft Drink Cola,Beverages,3,Citric Acid,Neutral,,,Used for tartness and preservation.
+23,Soft Drink Cola,Beverages,4,Artificial Flavors,Neutral,,,Used mainly to mimic or enhance taste.
+23,Soft Drink Cola,Beverages,5,Caffeine,Unhealthy,"May worsen caffeine sensitivity, palpitations, anxiety, or sleep disturbance in some people.",Stimulant,
+23,Soft Drink Cola,Beverages,6,Artificial Colors,Unhealthy,May trigger sensitivity or hyperactivity concerns in some individuals.,Additive sensitivity,
+24,Orange Soda,Beverages,1,Carbonated Water,Neutral,,,Base liquid component.
+24,Orange Soda,Beverages,2,High Fructose Corn Syrup,Unhealthy,"Very high added sugar load; may contribute to insulin resistance, weight gain, and fatty liver risk when consumed often.",High sugar,
+24,Orange Soda,Beverages,3,Citric Acid,Neutral,,,Used for tartness and preservation.
+24,Orange Soda,Beverages,4,Artificial Flavors,Neutral,,,Used mainly to mimic or enhance taste.
+24,Orange Soda,Beverages,5,Caffeine,Unhealthy,"May worsen caffeine sensitivity, palpitations, anxiety, or sleep disturbance in some people.",Stimulant,
+24,Orange Soda,Beverages,6,Artificial Colors,Unhealthy,May trigger sensitivity or hyperactivity concerns in some individuals.,Additive sensitivity,
+25,Energy Drink,Beverages,1,Carbonated Water,Neutral,,,Base liquid component.
+25,Energy Drink,Beverages,2,High Fructose Corn Syrup,Unhealthy,"Very high added sugar load; may contribute to insulin resistance, weight gain, and fatty liver risk when consumed often.",High sugar,
+25,Energy Drink,Beverages,3,Citric Acid,Neutral,,,Used for tartness and preservation.
+25,Energy Drink,Beverages,4,Artificial Flavors,Neutral,,,Used mainly to mimic or enhance taste.
+25,Energy Drink,Beverages,5,Caffeine,Unhealthy,"May worsen caffeine sensitivity, palpitations, anxiety, or sleep disturbance in some people.",Stimulant,
+25,Energy Drink,Beverages,6,Artificial Colors,Unhealthy,May trigger sensitivity or hyperactivity concerns in some individuals.,Additive sensitivity,
+26,Sports Drink,Beverages,1,Carbonated Water,Neutral,,,Base liquid component.
+26,Sports Drink,Beverages,2,High Fructose Corn Syrup,Unhealthy,"Very high added sugar load; may contribute to insulin resistance, weight gain, and fatty liver risk when consumed often.",High sugar,
+26,Sports Drink,Beverages,3,Citric Acid,Neutral,,,Used for tartness and preservation.
+26,Sports Drink,Beverages,4,Artificial Flavors,Neutral,,,Used mainly to mimic or enhance taste.
+26,Sports Drink,Beverages,5,Caffeine,Unhealthy,"May worsen caffeine sensitivity, palpitations, anxiety, or sleep disturbance in some people.",Stimulant,
+26,Sports Drink,Beverages,6,Artificial Colors,Unhealthy,May trigger sensitivity or hyperactivity concerns in some individuals.,Additive sensitivity,
+27,Sweetened Iced Tea,Beverages,1,Carbonated Water,Neutral,,,Base liquid component.
+27,Sweetened Iced Tea,Beverages,2,High Fructose Corn Syrup,Unhealthy,"Very high added sugar load; may contribute to insulin resistance, weight gain, and fatty liver risk when consumed often.",High sugar,
+27,Sweetened Iced Tea,Beverages,3,Citric Acid,Neutral,,,Used for tartness and preservation.
+27,Sweetened Iced Tea,Beverages,4,Artificial Flavors,Neutral,,,Used mainly to mimic or enhance taste.
+27,Sweetened Iced Tea,Beverages,5,Caffeine,Unhealthy,"May worsen caffeine sensitivity, palpitations, anxiety, or sleep disturbance in some people.",Stimulant,
+27,Sweetened Iced Tea,Beverages,6,Artificial Colors,Unhealthy,May trigger sensitivity or hyperactivity concerns in some individuals.,Additive sensitivity,
+28,Packaged Fruit Juice,Beverages,1,Carbonated Water,Neutral,,,Base liquid component.
+28,Packaged Fruit Juice,Beverages,2,High Fructose Corn Syrup,Unhealthy,"Very high added sugar load; may contribute to insulin resistance, weight gain, and fatty liver risk when consumed often.",High sugar,
+28,Packaged Fruit Juice,Beverages,3,Citric Acid,Neutral,,,Used for tartness and preservation.
+28,Packaged Fruit Juice,Beverages,4,Artificial Flavors,Neutral,,,Used mainly to mimic or enhance taste.
+28,Packaged Fruit Juice,Beverages,5,Caffeine,Unhealthy,"May worsen caffeine sensitivity, palpitations, anxiety, or sleep disturbance in some people.",Stimulant,
+28,Packaged Fruit Juice,Beverages,6,Artificial Colors,Unhealthy,May trigger sensitivity or hyperactivity concerns in some individuals.,Additive sensitivity,
+29,Chocolate Milk Drink,Beverages,1,Carbonated Water,Neutral,,,Base liquid component.
+29,Chocolate Milk Drink,Beverages,2,High Fructose Corn Syrup,Unhealthy,"Very high added sugar load; may contribute to insulin resistance, weight gain, and fatty liver risk when consumed often.",High sugar,
+29,Chocolate Milk Drink,Beverages,3,Citric Acid,Neutral,,,Used for tartness and preservation.
+29,Chocolate Milk Drink,Beverages,4,Artificial Flavors,Neutral,,,Used mainly to mimic or enhance taste.
+29,Chocolate Milk Drink,Beverages,5,Caffeine,Unhealthy,"May worsen caffeine sensitivity, palpitations, anxiety, or sleep disturbance in some people.",Stimulant,
+29,Chocolate Milk Drink,Beverages,6,Artificial Colors,Unhealthy,May trigger sensitivity or hyperactivity concerns in some individuals.,Additive sensitivity,
+30,Instant Soup Mix,Ready Meals,1,Refined Wheat Flour,Unhealthy,Refined base with lower fiber and faster digestion.,Refined carb,
+30,Instant Soup Mix,Ready Meals,2,Palm Oil,Unhealthy,"Common processed fat source, often raising saturated fat content.",Saturated fat,
+30,Instant Soup Mix,Ready Meals,3,Salt,Unhealthy,Excess sodium may affect blood pressure and kidney health.,High sodium,
+30,Instant Soup Mix,Ready Meals,4,Monosodium Glutamate,Unhealthy,May be a sensitivity trigger for some people and often comes with salty flavor profiles.,Additive sensitivity,
+30,Instant Soup Mix,Ready Meals,5,Dehydrated Vegetables,Healthy,,,Adds some micronutrients and flavor.
+30,Instant Soup Mix,Ready Meals,6,Spice Mix,Neutral,,,Used for taste and aroma.
+31,Canned Tomato Soup,Canned Foods,1,Refined Wheat Flour,Unhealthy,Refined base with lower fiber and faster digestion.,Refined carb,
+31,Canned Tomato Soup,Canned Foods,2,Palm Oil,Unhealthy,"Common processed fat source, often raising saturated fat content.",Saturated fat,
+31,Canned Tomato Soup,Canned Foods,3,Salt,Unhealthy,Excess sodium may affect blood pressure and kidney health.,High sodium,
+31,Canned Tomato Soup,Canned Foods,4,Monosodium Glutamate,Unhealthy,May be a sensitivity trigger for some people and often comes with salty flavor profiles.,Additive sensitivity,
+31,Canned Tomato Soup,Canned Foods,5,Dehydrated Vegetables,Healthy,,,Adds some micronutrients and flavor.
+31,Canned Tomato Soup,Canned Foods,6,Spice Mix,Neutral,,,Used for taste and aroma.
+32,Canned Baked Beans,Canned Foods,1,Refined Wheat Flour,Unhealthy,Refined base with lower fiber and faster digestion.,Refined carb,
+32,Canned Baked Beans,Canned Foods,2,Palm Oil,Unhealthy,"Common processed fat source, often raising saturated fat content.",Saturated fat,
+32,Canned Baked Beans,Canned Foods,3,Salt,Unhealthy,Excess sodium may affect blood pressure and kidney health.,High sodium,
+32,Canned Baked Beans,Canned Foods,4,Monosodium Glutamate,Unhealthy,May be a sensitivity trigger for some people and often comes with salty flavor profiles.,Additive sensitivity,
+32,Canned Baked Beans,Canned Foods,5,Dehydrated Vegetables,Healthy,,,Adds some micronutrients and flavor.
+32,Canned Baked Beans,Canned Foods,6,Spice Mix,Neutral,,,Used for taste and aroma.
+33,Canned Sweet Corn,Canned Foods,1,Refined Wheat Flour,Unhealthy,Refined base with lower fiber and faster digestion.,Refined carb,
+33,Canned Sweet Corn,Canned Foods,2,Palm Oil,Unhealthy,"Common processed fat source, often raising saturated fat content.",Saturated fat,
+33,Canned Sweet Corn,Canned Foods,3,Salt,Unhealthy,Excess sodium may affect blood pressure and kidney health.,High sodium,
+33,Canned Sweet Corn,Canned Foods,4,Monosodium Glutamate,Unhealthy,May be a sensitivity trigger for some people and often comes with salty flavor profiles.,Additive sensitivity,
+33,Canned Sweet Corn,Canned Foods,5,Dehydrated Vegetables,Healthy,,,Adds some micronutrients and flavor.
+33,Canned Sweet Corn,Canned Foods,6,Spice Mix,Neutral,,,Used for taste and aroma.
+34,Canned Tuna in Oil,Canned Foods,1,Meat,Neutral,,,Primary protein source.
+34,Canned Tuna in Oil,Canned Foods,2,Salt,Unhealthy,Processed meats are often high in sodium.,High sodium,
+34,Canned Tuna in Oil,Canned Foods,3,Sodium Nitrite,Unhealthy,Curing preservative; frequent intake of processed meats is generally considered less healthy.,Preservative,
+34,Canned Tuna in Oil,Canned Foods,4,Starch,Neutral,,,Used for texture and binding.
+34,Canned Tuna in Oil,Canned Foods,5,Protein Isolate,Neutral,,,Added to improve texture or protein content.
+34,Canned Tuna in Oil,Canned Foods,6,Spices,Neutral,,,Used for taste.
+35,Canned Chicken Sausage,Canned Foods,1,Meat,Neutral,,,Primary protein source.
+35,Canned Chicken Sausage,Canned Foods,2,Salt,Unhealthy,Processed meats are often high in sodium.,High sodium,
+35,Canned Chicken Sausage,Canned Foods,3,Sodium Nitrite,Unhealthy,Curing preservative; frequent intake of processed meats is generally considered less healthy.,Preservative,
+35,Canned Chicken Sausage,Canned Foods,4,Starch,Neutral,,,Used for texture and binding.
+35,Canned Chicken Sausage,Canned Foods,5,Protein Isolate,Neutral,,,Added to improve texture or protein content.
+35,Canned Chicken Sausage,Canned Foods,6,Spices,Neutral,,,Used for taste.
+36,White Bread,Bakery,1,Sugar,Unhealthy,High added sugar can spike blood glucose and increase calorie intake with low satiety.,High sugar,
+36,White Bread,Bakery,2,Glucose Syrup,Unhealthy,Rapidly absorbed sugar source that may raise blood sugar quickly.,High glycemic load,
+36,White Bread,Bakery,3,Refined Wheat Flour,Unhealthy,Low fiber and highly refined; may not support blood sugar control well.,Refined carb,
+36,White Bread,Bakery,4,Palm Oil,Unhealthy,High in saturated fat and commonly used in processed foods.,Saturated fat,
+36,White Bread,Bakery,5,Cocoa Powder,Neutral,,,Used for flavor; can be fine in moderate amounts.
+36,White Bread,Bakery,6,Soy Lecithin,Neutral,,,Emulsifier commonly used for texture and consistency.
+37,Burger Buns,Bakery,1,Sugar,Unhealthy,High added sugar can spike blood glucose and increase calorie intake with low satiety.,High sugar,
+37,Burger Buns,Bakery,2,Glucose Syrup,Unhealthy,Rapidly absorbed sugar source that may raise blood sugar quickly.,High glycemic load,
+37,Burger Buns,Bakery,3,Refined Wheat Flour,Unhealthy,Low fiber and highly refined; may not support blood sugar control well.,Refined carb,
+37,Burger Buns,Bakery,4,Palm Oil,Unhealthy,High in saturated fat and commonly used in processed foods.,Saturated fat,
+37,Burger Buns,Bakery,5,Cocoa Powder,Neutral,,,Used for flavor; can be fine in moderate amounts.
+37,Burger Buns,Bakery,6,Soy Lecithin,Neutral,,,Emulsifier commonly used for texture and consistency.
+38,Packaged Muffin,Bakery,1,Sugar,Unhealthy,High added sugar can spike blood glucose and increase calorie intake with low satiety.,High sugar,
+38,Packaged Muffin,Bakery,2,Glucose Syrup,Unhealthy,Rapidly absorbed sugar source that may raise blood sugar quickly.,High glycemic load,
+38,Packaged Muffin,Bakery,3,Refined Wheat Flour,Unhealthy,Low fiber and highly refined; may not support blood sugar control well.,Refined carb,
+38,Packaged Muffin,Bakery,4,Palm Oil,Unhealthy,High in saturated fat and commonly used in processed foods.,Saturated fat,
+38,Packaged Muffin,Bakery,5,Cocoa Powder,Neutral,,,Used for flavor; can be fine in moderate amounts.
+38,Packaged Muffin,Bakery,6,Soy Lecithin,Neutral,,,Emulsifier commonly used for texture and consistency.
+39,Donut Pack,Bakery,1,Sugar,Unhealthy,High added sugar can spike blood glucose and increase calorie intake with low satiety.,High sugar,
+39,Donut Pack,Bakery,2,Glucose Syrup,Unhealthy,Rapidly absorbed sugar source that may raise blood sugar quickly.,High glycemic load,
+39,Donut Pack,Bakery,3,Refined Wheat Flour,Unhealthy,Low fiber and highly refined; may not support blood sugar control well.,Refined carb,
+39,Donut Pack,Bakery,4,Palm Oil,Unhealthy,High in saturated fat and commonly used in processed foods.,Saturated fat,
+39,Donut Pack,Bakery,5,Cocoa Powder,Neutral,,,Used for flavor; can be fine in moderate amounts.
+39,Donut Pack,Bakery,6,Soy Lecithin,Neutral,,,Emulsifier commonly used for texture and consistency.
+40,Frozen Paratha,Frozen Foods,1,Refined Flour or Breadcrumbs,Unhealthy,Processed coating/base with lower fiber.,Refined carb,
+40,Frozen Paratha,Frozen Foods,2,Processed Cheese or Fat,Unhealthy,Can increase saturated fat and sodium.,Saturated fat/high sodium,
+40,Frozen Paratha,Frozen Foods,3,Salt,Unhealthy,Raises sodium content substantially.,High sodium,
+40,Frozen Paratha,Frozen Foods,4,Stabilizers,Neutral,,,Used to maintain texture.
+40,Frozen Paratha,Frozen Foods,5,Protein Source,Healthy,,,"Provides protein, depending on product quality."
+40,Frozen Paratha,Frozen Foods,6,Herbs and Seasonings,Neutral,,,Used for flavor.
+41,Frozen Samosa,Frozen Foods,1,Refined Flour or Breadcrumbs,Unhealthy,Processed coating/base with lower fiber.,Refined carb,
+41,Frozen Samosa,Frozen Foods,2,Processed Cheese or Fat,Unhealthy,Can increase saturated fat and sodium.,Saturated fat/high sodium,
+41,Frozen Samosa,Frozen Foods,3,Salt,Unhealthy,Raises sodium content substantially.,High sodium,
+41,Frozen Samosa,Frozen Foods,4,Stabilizers,Neutral,,,Used to maintain texture.
+41,Frozen Samosa,Frozen Foods,5,Protein Source,Healthy,,,"Provides protein, depending on product quality."
+41,Frozen Samosa,Frozen Foods,6,Herbs and Seasonings,Neutral,,,Used for flavor.
+42,Frozen Burger Patty,Frozen Foods,1,Refined Flour or Breadcrumbs,Unhealthy,Processed coating/base with lower fiber.,Refined carb,
+42,Frozen Burger Patty,Frozen Foods,2,Processed Cheese or Fat,Unhealthy,Can increase saturated fat and sodium.,Saturated fat/high sodium,
+42,Frozen Burger Patty,Frozen Foods,3,Salt,Unhealthy,Raises sodium content substantially.,High sodium,
+42,Frozen Burger Patty,Frozen Foods,4,Stabilizers,Neutral,,,Used to maintain texture.
+42,Frozen Burger Patty,Frozen Foods,5,Protein Source,Healthy,,,"Provides protein, depending on product quality."
+42,Frozen Burger Patty,Frozen Foods,6,Herbs and Seasonings,Neutral,,,Used for flavor.
+43,Mayonnaise,Condiments,1,Sugar,Unhealthy,Added sugar increases calorie load and may affect blood glucose.,High sugar,
+43,Mayonnaise,Condiments,2,Salt,Unhealthy,Can make the product high in sodium even in small servings.,High sodium,
+43,Mayonnaise,Condiments,3,Vinegar,Neutral,,,Used for acidity and preservation.
+43,Mayonnaise,Condiments,4,Preservatives,Unhealthy,Frequent intake of heavily preserved foods is generally less desirable.,Additive load,
+43,Mayonnaise,Condiments,5,Spices or Tomato Solids,Healthy,,,Can contribute flavor and some beneficial compounds depending on the source.
+43,Mayonnaise,Condiments,6,Thickeners,Neutral,,,Used for consistency and texture.
+44,Tomato Ketchup,Condiments,1,Sugar,Unhealthy,Added sugar increases calorie load and may affect blood glucose.,High sugar,
+44,Tomato Ketchup,Condiments,2,Salt,Unhealthy,Can make the product high in sodium even in small servings.,High sodium,
+44,Tomato Ketchup,Condiments,3,Vinegar,Neutral,,,Used for acidity and preservation.
+44,Tomato Ketchup,Condiments,4,Preservatives,Unhealthy,Frequent intake of heavily preserved foods is generally less desirable.,Additive load,
+44,Tomato Ketchup,Condiments,5,Spices or Tomato Solids,Healthy,,,Can contribute flavor and some beneficial compounds depending on the source.
+44,Tomato Ketchup,Condiments,6,Thickeners,Neutral,,,Used for consistency and texture.
+45,Chili Sauce,Condiments,1,Sugar,Unhealthy,Added sugar increases calorie load and may affect blood glucose.,High sugar,
+45,Chili Sauce,Condiments,2,Salt,Unhealthy,Can make the product high in sodium even in small servings.,High sodium,
+45,Chili Sauce,Condiments,3,Vinegar,Neutral,,,Used for acidity and preservation.
+45,Chili Sauce,Condiments,4,Preservatives,Unhealthy,Frequent intake of heavily preserved foods is generally less desirable.,Additive load,
+45,Chili Sauce,Condiments,5,Spices or Tomato Solids,Healthy,,,Can contribute flavor and some beneficial compounds depending on the source.
+45,Chili Sauce,Condiments,6,Thickeners,Neutral,,,Used for consistency and texture.
+46,Salad Dressing,Condiments,1,Sugar,Unhealthy,Added sugar increases calorie load and may affect blood glucose.,High sugar,
+46,Salad Dressing,Condiments,2,Salt,Unhealthy,Can make the product high in sodium even in small servings.,High sodium,
+46,Salad Dressing,Condiments,3,Vinegar,Neutral,,,Used for acidity and preservation.
+46,Salad Dressing,Condiments,4,Preservatives,Unhealthy,Frequent intake of heavily preserved foods is generally less desirable.,Additive load,
+46,Salad Dressing,Condiments,5,Spices or Tomato Solids,Healthy,,,Can contribute flavor and some beneficial compounds depending on the source.
+46,Salad Dressing,Condiments,6,Thickeners,Neutral,,,Used for consistency and texture.
+47,Peanut Butter Spread,Spreads,1,Sugar,Unhealthy,Added sugar increases calorie load and may affect blood glucose.,High sugar,
+47,Peanut Butter Spread,Spreads,2,Salt,Unhealthy,Can make the product high in sodium even in small servings.,High sodium,
+47,Peanut Butter Spread,Spreads,3,Vinegar,Neutral,,,Used for acidity and preservation.
+47,Peanut Butter Spread,Spreads,4,Preservatives,Unhealthy,Frequent intake of heavily preserved foods is generally less desirable.,Additive load,
+47,Peanut Butter Spread,Spreads,5,Spices or Tomato Solids,Healthy,,,Can contribute flavor and some beneficial compounds depending on the source.
+47,Peanut Butter Spread,Spreads,6,Thickeners,Neutral,,,Used for consistency and texture.
+48,Chocolate Spread,Spreads,1,Sugar,Unhealthy,Added sugar increases calorie load and may affect blood glucose.,High sugar,
+48,Chocolate Spread,Spreads,2,Salt,Unhealthy,Can make the product high in sodium even in small servings.,High sodium,
+48,Chocolate Spread,Spreads,3,Vinegar,Neutral,,,Used for acidity and preservation.
+48,Chocolate Spread,Spreads,4,Preservatives,Unhealthy,Frequent intake of heavily preserved foods is generally less desirable.,Additive load,
+48,Chocolate Spread,Spreads,5,Spices or Tomato Solids,Healthy,,,Can contribute flavor and some beneficial compounds depending on the source.
+48,Chocolate Spread,Spreads,6,Thickeners,Neutral,,,Used for consistency and texture.
+49,Instant Oatmeal Flavored,Breakfast,1,Whole Grain Oats or Grain Base,Healthy,,,Can contribute fiber and longer satiety if present in meaningful amounts.
+49,Instant Oatmeal Flavored,Breakfast,2,Sugar,Unhealthy,Raises added sugar content.,High sugar,
+49,Instant Oatmeal Flavored,Breakfast,3,Malt Extract or Syrup,Unhealthy,Concentrated sweetener that may raise glycemic load.,High glycemic load,
+49,Instant Oatmeal Flavored,Breakfast,4,Salt,Unhealthy,Packaged breakfast foods can still contain notable sodium.,High sodium,
+49,Instant Oatmeal Flavored,Breakfast,5,Fortified Vitamins,Healthy,,,Added micronutrients may improve nutritional profile.
+49,Instant Oatmeal Flavored,Breakfast,6,Flavoring,Neutral,,,Used for taste.
+50,Sweet Corn Flakes,Breakfast,1,Whole Grain Oats or Grain Base,Healthy,,,Can contribute fiber and longer satiety if present in meaningful amounts.
+50,Sweet Corn Flakes,Breakfast,2,Sugar,Unhealthy,Raises added sugar content.,High sugar,
+50,Sweet Corn Flakes,Breakfast,3,Malt Extract or Syrup,Unhealthy,Concentrated sweetener that may raise glycemic load.,High glycemic load,
+50,Sweet Corn Flakes,Breakfast,4,Salt,Unhealthy,Packaged breakfast foods can still contain notable sodium.,High sodium,
+50,Sweet Corn Flakes,Breakfast,5,Fortified Vitamins,Healthy,,,Added micronutrients may improve nutritional profile.
+50,Sweet Corn Flakes,Breakfast,6,Flavoring,Neutral,,,Used for taste.
+51,Ready-to-eat Pasta,Ready Meals,1,Refined Wheat Flour,Unhealthy,Refined base with lower fiber and faster digestion.,Refined carb,
+51,Ready-to-eat Pasta,Ready Meals,2,Palm Oil,Unhealthy,"Common processed fat source, often raising saturated fat content.",Saturated fat,
+51,Ready-to-eat Pasta,Ready Meals,3,Salt,Unhealthy,Excess sodium may affect blood pressure and kidney health.,High sodium,
+51,Ready-to-eat Pasta,Ready Meals,4,Monosodium Glutamate,Unhealthy,May be a sensitivity trigger for some people and often comes with salty flavor profiles.,Additive sensitivity,
+51,Ready-to-eat Pasta,Ready Meals,5,Dehydrated Vegetables,Healthy,,,Adds some micronutrients and flavor.
+51,Ready-to-eat Pasta,Ready Meals,6,Spice Mix,Neutral,,,Used for taste and aroma.
+52,Mac and Cheese Box,Ready Meals,1,Refined Wheat Flour,Unhealthy,Refined base with lower fiber and faster digestion.,Refined carb,
+52,Mac and Cheese Box,Ready Meals,2,Palm Oil,Unhealthy,"Common processed fat source, often raising saturated fat content.",Saturated fat,
+52,Mac and Cheese Box,Ready Meals,3,Salt,Unhealthy,Excess sodium may affect blood pressure and kidney health.,High sodium,
+52,Mac and Cheese Box,Ready Meals,4,Monosodium Glutamate,Unhealthy,May be a sensitivity trigger for some people and often comes with salty flavor profiles.,Additive sensitivity,
+52,Mac and Cheese Box,Ready Meals,5,Dehydrated Vegetables,Healthy,,,Adds some micronutrients and flavor.
+52,Mac and Cheese Box,Ready Meals,6,Spice Mix,Neutral,,,Used for taste and aroma.
+53,Instant Upma Mix,Ready Meals,1,Refined Wheat Flour,Unhealthy,Refined base with lower fiber and faster digestion.,Refined carb,
+53,Instant Upma Mix,Ready Meals,2,Palm Oil,Unhealthy,"Common processed fat source, often raising saturated fat content.",Saturated fat,
+53,Instant Upma Mix,Ready Meals,3,Salt,Unhealthy,Excess sodium may affect blood pressure and kidney health.,High sodium,
+53,Instant Upma Mix,Ready Meals,4,Monosodium Glutamate,Unhealthy,May be a sensitivity trigger for some people and often comes with salty flavor profiles.,Additive sensitivity,
+53,Instant Upma Mix,Ready Meals,5,Dehydrated Vegetables,Healthy,,,Adds some micronutrients and flavor.
+53,Instant Upma Mix,Ready Meals,6,Spice Mix,Neutral,,,Used for taste and aroma.
+54,Instant Poha Mix,Ready Meals,1,Refined Wheat Flour,Unhealthy,Refined base with lower fiber and faster digestion.,Refined carb,
+54,Instant Poha Mix,Ready Meals,2,Palm Oil,Unhealthy,"Common processed fat source, often raising saturated fat content.",Saturated fat,
+54,Instant Poha Mix,Ready Meals,3,Salt,Unhealthy,Excess sodium may affect blood pressure and kidney health.,High sodium,
+54,Instant Poha Mix,Ready Meals,4,Monosodium Glutamate,Unhealthy,May be a sensitivity trigger for some people and often comes with salty flavor profiles.,Additive sensitivity,
+54,Instant Poha Mix,Ready Meals,5,Dehydrated Vegetables,Healthy,,,Adds some micronutrients and flavor.
+54,Instant Poha Mix,Ready Meals,6,Spice Mix,Neutral,,,Used for taste and aroma.
+55,Frozen Veg Momos,Frozen Foods,1,Refined Flour or Breadcrumbs,Unhealthy,Processed coating/base with lower fiber.,Refined carb,
+55,Frozen Veg Momos,Frozen Foods,2,Processed Cheese or Fat,Unhealthy,Can increase saturated fat and sodium.,Saturated fat/high sodium,
+55,Frozen Veg Momos,Frozen Foods,3,Salt,Unhealthy,Raises sodium content substantially.,High sodium,
+55,Frozen Veg Momos,Frozen Foods,4,Stabilizers,Neutral,,,Used to maintain texture.
+55,Frozen Veg Momos,Frozen Foods,5,Protein Source,Healthy,,,"Provides protein, depending on product quality."
+55,Frozen Veg Momos,Frozen Foods,6,Herbs and Seasonings,Neutral,,,Used for flavor.
+56,Frozen Chicken Momos,Frozen Foods,1,Refined Flour or Breadcrumbs,Unhealthy,Processed coating/base with lower fiber.,Refined carb,
+56,Frozen Chicken Momos,Frozen Foods,2,Processed Cheese or Fat,Unhealthy,Can increase saturated fat and sodium.,Saturated fat/high sodium,
+56,Frozen Chicken Momos,Frozen Foods,3,Salt,Unhealthy,Raises sodium content substantially.,High sodium,
+56,Frozen Chicken Momos,Frozen Foods,4,Stabilizers,Neutral,,,Used to maintain texture.
+56,Frozen Chicken Momos,Frozen Foods,5,Protein Source,Healthy,,,"Provides protein, depending on product quality."
+56,Frozen Chicken Momos,Frozen Foods,6,Herbs and Seasonings,Neutral,,,Used for flavor.
+57,Packaged Brownie,Bakery,1,Sugar,Unhealthy,High added sugar can spike blood glucose and increase calorie intake with low satiety.,High sugar,
+57,Packaged Brownie,Bakery,2,Glucose Syrup,Unhealthy,Rapidly absorbed sugar source that may raise blood sugar quickly.,High glycemic load,
+57,Packaged Brownie,Bakery,3,Refined Wheat Flour,Unhealthy,Low fiber and highly refined; may not support blood sugar control well.,Refined carb,
+57,Packaged Brownie,Bakery,4,Palm Oil,Unhealthy,High in saturated fat and commonly used in processed foods.,Saturated fat,
+57,Packaged Brownie,Bakery,5,Cocoa Powder,Neutral,,,Used for flavor; can be fine in moderate amounts.
+57,Packaged Brownie,Bakery,6,Soy Lecithin,Neutral,,,Emulsifier commonly used for texture and consistency.
+58,Wafer Biscuits,Bakery,1,Sugar,Unhealthy,High added sugar can spike blood glucose and increase calorie intake with low satiety.,High sugar,
+58,Wafer Biscuits,Bakery,2,Glucose Syrup,Unhealthy,Rapidly absorbed sugar source that may raise blood sugar quickly.,High glycemic load,
+58,Wafer Biscuits,Bakery,3,Refined Wheat Flour,Unhealthy,Low fiber and highly refined; may not support blood sugar control well.,Refined carb,
+58,Wafer Biscuits,Bakery,4,Palm Oil,Unhealthy,High in saturated fat and commonly used in processed foods.,Saturated fat,
+58,Wafer Biscuits,Bakery,5,Cocoa Powder,Neutral,,,Used for flavor; can be fine in moderate amounts.
+58,Wafer Biscuits,Bakery,6,Soy Lecithin,Neutral,,,Emulsifier commonly used for texture and consistency.
+59,Marshmallow Candy,Confectionery,1,Sugar,Unhealthy,High added sugar can spike blood glucose and increase calorie intake with low satiety.,High sugar,
+59,Marshmallow Candy,Confectionery,2,Glucose Syrup,Unhealthy,Rapidly absorbed sugar source that may raise blood sugar quickly.,High glycemic load,
+59,Marshmallow Candy,Confectionery,3,Refined Wheat Flour,Unhealthy,Low fiber and highly refined; may not support blood sugar control well.,Refined carb,
+59,Marshmallow Candy,Confectionery,4,Palm Oil,Unhealthy,High in saturated fat and commonly used in processed foods.,Saturated fat,
+59,Marshmallow Candy,Confectionery,5,Cocoa Powder,Neutral,,,Used for flavor; can be fine in moderate amounts.
+59,Marshmallow Candy,Confectionery,6,Soy Lecithin,Neutral,,,Emulsifier commonly used for texture and consistency.
+60,Gummy Candy,Confectionery,1,Sugar,Unhealthy,High added sugar can spike blood glucose and increase calorie intake with low satiety.,High sugar,
+60,Gummy Candy,Confectionery,2,Glucose Syrup,Unhealthy,Rapidly absorbed sugar source that may raise blood sugar quickly.,High glycemic load,
+60,Gummy Candy,Confectionery,3,Refined Wheat Flour,Unhealthy,Low fiber and highly refined; may not support blood sugar control well.,Refined carb,
+60,Gummy Candy,Confectionery,4,Palm Oil,Unhealthy,High in saturated fat and commonly used in processed foods.,Saturated fat,
+60,Gummy Candy,Confectionery,5,Cocoa Powder,Neutral,,,Used for flavor; can be fine in moderate amounts.
+60,Gummy Candy,Confectionery,6,Soy Lecithin,Neutral,,,Emulsifier commonly used for texture and consistency.
+61,Milk Chocolate Bar,Confectionery,1,Sugar,Unhealthy,High added sugar can spike blood glucose and increase calorie intake with low satiety.,High sugar,
+61,Milk Chocolate Bar,Confectionery,2,Glucose Syrup,Unhealthy,Rapidly absorbed sugar source that may raise blood sugar quickly.,High glycemic load,
+61,Milk Chocolate Bar,Confectionery,3,Refined Wheat Flour,Unhealthy,Low fiber and highly refined; may not support blood sugar control well.,Refined carb,
+61,Milk Chocolate Bar,Confectionery,4,Palm Oil,Unhealthy,High in saturated fat and commonly used in processed foods.,Saturated fat,
+61,Milk Chocolate Bar,Confectionery,5,Cocoa Powder,Neutral,,,Used for flavor; can be fine in moderate amounts.
+61,Milk Chocolate Bar,Confectionery,6,Soy Lecithin,Neutral,,,Emulsifier commonly used for texture and consistency.
+62,Dark Chocolate Bar,Confectionery,1,Sugar,Unhealthy,High added sugar can spike blood glucose and increase calorie intake with low satiety.,High sugar,
+62,Dark Chocolate Bar,Confectionery,2,Glucose Syrup,Unhealthy,Rapidly absorbed sugar source that may raise blood sugar quickly.,High glycemic load,
+62,Dark Chocolate Bar,Confectionery,3,Refined Wheat Flour,Unhealthy,Low fiber and highly refined; may not support blood sugar control well.,Refined carb,
+62,Dark Chocolate Bar,Confectionery,4,Palm Oil,Unhealthy,High in saturated fat and commonly used in processed foods.,Saturated fat,
+62,Dark Chocolate Bar,Confectionery,5,Cocoa Powder,Neutral,,,Used for flavor; can be fine in moderate amounts.
+62,Dark Chocolate Bar,Confectionery,6,Soy Lecithin,Neutral,,,Emulsifier commonly used for texture and consistency.
+63,Instant Coffee Premix,Beverages,1,Carbonated Water,Neutral,,,Base liquid component.
+63,Instant Coffee Premix,Beverages,2,High Fructose Corn Syrup,Unhealthy,"Very high added sugar load; may contribute to insulin resistance, weight gain, and fatty liver risk when consumed often.",High sugar,
+63,Instant Coffee Premix,Beverages,3,Citric Acid,Neutral,,,Used for tartness and preservation.
+63,Instant Coffee Premix,Beverages,4,Artificial Flavors,Neutral,,,Used mainly to mimic or enhance taste.
+63,Instant Coffee Premix,Beverages,5,Caffeine,Unhealthy,"May worsen caffeine sensitivity, palpitations, anxiety, or sleep disturbance in some people.",Stimulant,
+63,Instant Coffee Premix,Beverages,6,Artificial Colors,Unhealthy,May trigger sensitivity or hyperactivity concerns in some individuals.,Additive sensitivity,
+64,3-in-1 Coffee Mix,Beverages,1,Carbonated Water,Neutral,,,Base liquid component.
+64,3-in-1 Coffee Mix,Beverages,2,High Fructose Corn Syrup,Unhealthy,"Very high added sugar load; may contribute to insulin resistance, weight gain, and fatty liver risk when consumed often.",High sugar,
+64,3-in-1 Coffee Mix,Beverages,3,Citric Acid,Neutral,,,Used for tartness and preservation.
+64,3-in-1 Coffee Mix,Beverages,4,Artificial Flavors,Neutral,,,Used mainly to mimic or enhance taste.
+64,3-in-1 Coffee Mix,Beverages,5,Caffeine,Unhealthy,"May worsen caffeine sensitivity, palpitations, anxiety, or sleep disturbance in some people.",Stimulant,
+64,3-in-1 Coffee Mix,Beverages,6,Artificial Colors,Unhealthy,May trigger sensitivity or hyperactivity concerns in some individuals.,Additive sensitivity,
+65,Flavored Milkshake Bottle,Beverages,1,Milk Solids,Healthy,,,Provide protein and calcium.
+65,Flavored Milkshake Bottle,Beverages,2,Sugar,Unhealthy,Raises added sugar content and calorie density.,High sugar,
+65,Flavored Milkshake Bottle,Beverages,3,Cream,Unhealthy,Can increase saturated fat load.,Saturated fat,
+65,Flavored Milkshake Bottle,Beverages,4,Stabilizers,Neutral,,,Used for consistency and shelf life.
+65,Flavored Milkshake Bottle,Beverages,5,Fruit Puree or Flavor,Neutral,,,"May add taste, though sometimes only in small amounts."
+65,Flavored Milkshake Bottle,Beverages,6,Cultures,Healthy,,,Beneficial in fermented dairy products like yogurt.
+66,Ready-to-drink Cold Coffee,Beverages,1,Carbonated Water,Neutral,,,Base liquid component.
+66,Ready-to-drink Cold Coffee,Beverages,2,High Fructose Corn Syrup,Unhealthy,"Very high added sugar load; may contribute to insulin resistance, weight gain, and fatty liver risk when consumed often.",High sugar,
+66,Ready-to-drink Cold Coffee,Beverages,3,Citric Acid,Neutral,,,Used for tartness and preservation.
+66,Ready-to-drink Cold Coffee,Beverages,4,Artificial Flavors,Neutral,,,Used mainly to mimic or enhance taste.
+66,Ready-to-drink Cold Coffee,Beverages,5,Caffeine,Unhealthy,"May worsen caffeine sensitivity, palpitations, anxiety, or sleep disturbance in some people.",Stimulant,
+66,Ready-to-drink Cold Coffee,Beverages,6,Artificial Colors,Unhealthy,May trigger sensitivity or hyperactivity concerns in some individuals.,Additive sensitivity,
+67,Processed Paneer Cubes,Dairy,1,Milk Solids,Healthy,,,Provide protein and calcium.
+67,Processed Paneer Cubes,Dairy,2,Sugar,Unhealthy,Raises added sugar content and calorie density.,High sugar,
+67,Processed Paneer Cubes,Dairy,3,Cream,Unhealthy,Can increase saturated fat load.,Saturated fat,
+67,Processed Paneer Cubes,Dairy,4,Stabilizers,Neutral,,,Used for consistency and shelf life.
+67,Processed Paneer Cubes,Dairy,5,Fruit Puree or Flavor,Neutral,,,"May add taste, though sometimes only in small amounts."
+67,Processed Paneer Cubes,Dairy,6,Cultures,Healthy,,,Beneficial in fermented dairy products like yogurt.
+68,Flavored Soy Milk,Beverages,1,Milk Solids,Healthy,,,Provide protein and calcium.
+68,Flavored Soy Milk,Beverages,2,Sugar,Unhealthy,Raises added sugar content and calorie density.,High sugar,
+68,Flavored Soy Milk,Beverages,3,Cream,Unhealthy,Can increase saturated fat load.,Saturated fat,
+68,Flavored Soy Milk,Beverages,4,Stabilizers,Neutral,,,Used for consistency and shelf life.
+68,Flavored Soy Milk,Beverages,5,Fruit Puree or Flavor,Neutral,,,"May add taste, though sometimes only in small amounts."
+68,Flavored Soy Milk,Beverages,6,Cultures,Healthy,,,Beneficial in fermented dairy products like yogurt.
+69,Instant Idli Mix,Ready Meals,1,Refined Wheat Flour,Unhealthy,Refined base with lower fiber and faster digestion.,Refined carb,
+69,Instant Idli Mix,Ready Meals,2,Palm Oil,Unhealthy,"Common processed fat source, often raising saturated fat content.",Saturated fat,
+69,Instant Idli Mix,Ready Meals,3,Salt,Unhealthy,Excess sodium may affect blood pressure and kidney health.,High sodium,
+69,Instant Idli Mix,Ready Meals,4,Monosodium Glutamate,Unhealthy,May be a sensitivity trigger for some people and often comes with salty flavor profiles.,Additive sensitivity,
+69,Instant Idli Mix,Ready Meals,5,Dehydrated Vegetables,Healthy,,,Adds some micronutrients and flavor.
+69,Instant Idli Mix,Ready Meals,6,Spice Mix,Neutral,,,Used for taste and aroma.
+70,Instant Dosa Mix,Ready Meals,1,Refined Wheat Flour,Unhealthy,Refined base with lower fiber and faster digestion.,Refined carb,
+70,Instant Dosa Mix,Ready Meals,2,Palm Oil,Unhealthy,"Common processed fat source, often raising saturated fat content.",Saturated fat,
+70,Instant Dosa Mix,Ready Meals,3,Salt,Unhealthy,Excess sodium may affect blood pressure and kidney health.,High sodium,
+70,Instant Dosa Mix,Ready Meals,4,Monosodium Glutamate,Unhealthy,May be a sensitivity trigger for some people and often comes with salty flavor profiles.,Additive sensitivity,
+70,Instant Dosa Mix,Ready Meals,5,Dehydrated Vegetables,Healthy,,,Adds some micronutrients and flavor.
+70,Instant Dosa Mix,Ready Meals,6,Spice Mix,Neutral,,,Used for taste and aroma.
+71,Packaged Cupcake,Bakery,1,Sugar,Unhealthy,High added sugar can spike blood glucose and increase calorie intake with low satiety.,High sugar,
+71,Packaged Cupcake,Bakery,2,Glucose Syrup,Unhealthy,Rapidly absorbed sugar source that may raise blood sugar quickly.,High glycemic load,
+71,Packaged Cupcake,Bakery,3,Refined Wheat Flour,Unhealthy,Low fiber and highly refined; may not support blood sugar control well.,Refined carb,
+71,Packaged Cupcake,Bakery,4,Palm Oil,Unhealthy,High in saturated fat and commonly used in processed foods.,Saturated fat,
+71,Packaged Cupcake,Bakery,5,Cocoa Powder,Neutral,,,Used for flavor; can be fine in moderate amounts.
+71,Packaged Cupcake,Bakery,6,Soy Lecithin,Neutral,,,Emulsifier commonly used for texture and consistency.
+72,Cheese Dip,Condiments,1,Sugar,Unhealthy,Added sugar increases calorie load and may affect blood glucose.,High sugar,
+72,Cheese Dip,Condiments,2,Salt,Unhealthy,Can make the product high in sodium even in small servings.,High sodium,
+72,Cheese Dip,Condiments,3,Vinegar,Neutral,,,Used for acidity and preservation.
+72,Cheese Dip,Condiments,4,Preservatives,Unhealthy,Frequent intake of heavily preserved foods is generally less desirable.,Additive load,
+72,Cheese Dip,Condiments,5,Spices or Tomato Solids,Healthy,,,Can contribute flavor and some beneficial compounds depending on the source.
+72,Cheese Dip,Condiments,6,Thickeners,Neutral,,,Used for consistency and texture.
+73,Garlic Mayo Dip,Condiments,1,Sugar,Unhealthy,Added sugar increases calorie load and may affect blood glucose.,High sugar,
+73,Garlic Mayo Dip,Condiments,2,Salt,Unhealthy,Can make the product high in sodium even in small servings.,High sodium,
+73,Garlic Mayo Dip,Condiments,3,Vinegar,Neutral,,,Used for acidity and preservation.
+73,Garlic Mayo Dip,Condiments,4,Preservatives,Unhealthy,Frequent intake of heavily preserved foods is generally less desirable.,Additive load,
+73,Garlic Mayo Dip,Condiments,5,Spices or Tomato Solids,Healthy,,,Can contribute flavor and some beneficial compounds depending on the source.
+73,Garlic Mayo Dip,Condiments,6,Thickeners,Neutral,,,Used for consistency and texture.
+74,BBQ Sauce,Condiments,1,Sugar,Unhealthy,Added sugar increases calorie load and may affect blood glucose.,High sugar,
+74,BBQ Sauce,Condiments,2,Salt,Unhealthy,Can make the product high in sodium even in small servings.,High sodium,
+74,BBQ Sauce,Condiments,3,Vinegar,Neutral,,,Used for acidity and preservation.
+74,BBQ Sauce,Condiments,4,Preservatives,Unhealthy,Frequent intake of heavily preserved foods is generally less desirable.,Additive load,
+74,BBQ Sauce,Condiments,5,Spices or Tomato Solids,Healthy,,,Can contribute flavor and some beneficial compounds depending on the source.
+74,BBQ Sauce,Condiments,6,Thickeners,Neutral,,,Used for consistency and texture.
+75,Sweet Pickle Relish,Condiments,1,Sugar,Unhealthy,Added sugar increases calorie load and may affect blood glucose.,High sugar,
+75,Sweet Pickle Relish,Condiments,2,Salt,Unhealthy,Can make the product high in sodium even in small servings.,High sodium,
+75,Sweet Pickle Relish,Condiments,3,Vinegar,Neutral,,,Used for acidity and preservation.
+75,Sweet Pickle Relish,Condiments,4,Preservatives,Unhealthy,Frequent intake of heavily preserved foods is generally less desirable.,Additive load,
+75,Sweet Pickle Relish,Condiments,5,Spices or Tomato Solids,Healthy,,,Can contribute flavor and some beneficial compounds depending on the source.
+75,Sweet Pickle Relish,Condiments,6,Thickeners,Neutral,,,Used for consistency and texture.
+76,Processed Ham Slices,Meat,1,Meat,Neutral,,,Primary protein source.
+76,Processed Ham Slices,Meat,2,Salt,Unhealthy,Processed meats are often high in sodium.,High sodium,
+76,Processed Ham Slices,Meat,3,Sodium Nitrite,Unhealthy,Curing preservative; frequent intake of processed meats is generally considered less healthy.,Preservative,
+76,Processed Ham Slices,Meat,4,Starch,Neutral,,,Used for texture and binding.
+76,Processed Ham Slices,Meat,5,Protein Isolate,Neutral,,,Added to improve texture or protein content.
+76,Processed Ham Slices,Meat,6,Spices,Neutral,,,Used for taste.
+77,Chicken Salami,Meat,1,Meat,Neutral,,,Primary protein source.
+77,Chicken Salami,Meat,2,Salt,Unhealthy,Processed meats are often high in sodium.,High sodium,
+77,Chicken Salami,Meat,3,Sodium Nitrite,Unhealthy,Curing preservative; frequent intake of processed meats is generally considered less healthy.,Preservative,
+77,Chicken Salami,Meat,4,Starch,Neutral,,,Used for texture and binding.
+77,Chicken Salami,Meat,5,Protein Isolate,Neutral,,,Added to improve texture or protein content.
+77,Chicken Salami,Meat,6,Spices,Neutral,,,Used for taste.
+78,Turkey Sausage,Meat,1,Meat,Neutral,,,Primary protein source.
+78,Turkey Sausage,Meat,2,Salt,Unhealthy,Processed meats are often high in sodium.,High sodium,
+78,Turkey Sausage,Meat,3,Sodium Nitrite,Unhealthy,Curing preservative; frequent intake of processed meats is generally considered less healthy.,Preservative,
+78,Turkey Sausage,Meat,4,Starch,Neutral,,,Used for texture and binding.
+78,Turkey Sausage,Meat,5,Protein Isolate,Neutral,,,Added to improve texture or protein content.
+78,Turkey Sausage,Meat,6,Spices,Neutral,,,Used for taste.
+79,Frozen Meatballs,Frozen Foods,1,Refined Flour or Breadcrumbs,Unhealthy,Processed coating/base with lower fiber.,Refined carb,
+79,Frozen Meatballs,Frozen Foods,2,Processed Cheese or Fat,Unhealthy,Can increase saturated fat and sodium.,Saturated fat/high sodium,
+79,Frozen Meatballs,Frozen Foods,3,Salt,Unhealthy,Raises sodium content substantially.,High sodium,
+79,Frozen Meatballs,Frozen Foods,4,Stabilizers,Neutral,,,Used to maintain texture.
+79,Frozen Meatballs,Frozen Foods,5,Protein Source,Healthy,,,"Provides protein, depending on product quality."
+79,Frozen Meatballs,Frozen Foods,6,Herbs and Seasonings,Neutral,,,Used for flavor.
+80,Canned Pasta in Sauce,Canned Foods,1,Refined Wheat Flour,Unhealthy,Refined base with lower fiber and faster digestion.,Refined carb,
+80,Canned Pasta in Sauce,Canned Foods,2,Palm Oil,Unhealthy,"Common processed fat source, often raising saturated fat content.",Saturated fat,
+80,Canned Pasta in Sauce,Canned Foods,3,Salt,Unhealthy,Excess sodium may affect blood pressure and kidney health.,High sodium,
+80,Canned Pasta in Sauce,Canned Foods,4,Monosodium Glutamate,Unhealthy,May be a sensitivity trigger for some people and often comes with salty flavor profiles.,Additive sensitivity,
+80,Canned Pasta in Sauce,Canned Foods,5,Dehydrated Vegetables,Healthy,,,Adds some micronutrients and flavor.
+80,Canned Pasta in Sauce,Canned Foods,6,Spice Mix,Neutral,,,Used for taste and aroma.
+81,Canned Mixed Fruit Syrup,Canned Foods,1,Refined Wheat Flour,Unhealthy,Refined base with lower fiber and faster digestion.,Refined carb,
+81,Canned Mixed Fruit Syrup,Canned Foods,2,Palm Oil,Unhealthy,"Common processed fat source, often raising saturated fat content.",Saturated fat,
+81,Canned Mixed Fruit Syrup,Canned Foods,3,Salt,Unhealthy,Excess sodium may affect blood pressure and kidney health.,High sodium,
+81,Canned Mixed Fruit Syrup,Canned Foods,4,Monosodium Glutamate,Unhealthy,May be a sensitivity trigger for some people and often comes with salty flavor profiles.,Additive sensitivity,
+81,Canned Mixed Fruit Syrup,Canned Foods,5,Dehydrated Vegetables,Healthy,,,Adds some micronutrients and flavor.
+81,Canned Mixed Fruit Syrup,Canned Foods,6,Spice Mix,Neutral,,,Used for taste and aroma.
+82,Packaged Lemon Cake,Bakery,1,Sugar,Unhealthy,High added sugar can spike blood glucose and increase calorie intake with low satiety.,High sugar,
+82,Packaged Lemon Cake,Bakery,2,Glucose Syrup,Unhealthy,Rapidly absorbed sugar source that may raise blood sugar quickly.,High glycemic load,
+82,Packaged Lemon Cake,Bakery,3,Refined Wheat Flour,Unhealthy,Low fiber and highly refined; may not support blood sugar control well.,Refined carb,
+82,Packaged Lemon Cake,Bakery,4,Palm Oil,Unhealthy,High in saturated fat and commonly used in processed foods.,Saturated fat,
+82,Packaged Lemon Cake,Bakery,5,Cocoa Powder,Neutral,,,Used for flavor; can be fine in moderate amounts.
+82,Packaged Lemon Cake,Bakery,6,Soy Lecithin,Neutral,,,Emulsifier commonly used for texture and consistency.
+83,Instant Rasam Mix,Ready Meals,1,Refined Wheat Flour,Unhealthy,Refined base with lower fiber and faster digestion.,Refined carb,
+83,Instant Rasam Mix,Ready Meals,2,Palm Oil,Unhealthy,"Common processed fat source, often raising saturated fat content.",Saturated fat,
+83,Instant Rasam Mix,Ready Meals,3,Salt,Unhealthy,Excess sodium may affect blood pressure and kidney health.,High sodium,
+83,Instant Rasam Mix,Ready Meals,4,Monosodium Glutamate,Unhealthy,May be a sensitivity trigger for some people and often comes with salty flavor profiles.,Additive sensitivity,
+83,Instant Rasam Mix,Ready Meals,5,Dehydrated Vegetables,Healthy,,,Adds some micronutrients and flavor.
+83,Instant Rasam Mix,Ready Meals,6,Spice Mix,Neutral,,,Used for taste and aroma.
+84,Instant Curry Paste,Ready Meals,1,Refined Wheat Flour,Unhealthy,Refined base with lower fiber and faster digestion.,Refined carb,
+84,Instant Curry Paste,Ready Meals,2,Palm Oil,Unhealthy,"Common processed fat source, often raising saturated fat content.",Saturated fat,
+84,Instant Curry Paste,Ready Meals,3,Salt,Unhealthy,Excess sodium may affect blood pressure and kidney health.,High sodium,
+84,Instant Curry Paste,Ready Meals,4,Monosodium Glutamate,Unhealthy,May be a sensitivity trigger for some people and often comes with salty flavor profiles.,Additive sensitivity,
+84,Instant Curry Paste,Ready Meals,5,Dehydrated Vegetables,Healthy,,,Adds some micronutrients and flavor.
+84,Instant Curry Paste,Ready Meals,6,Spice Mix,Neutral,,,Used for taste and aroma.
+85,Ready Biryani Pack,Ready Meals,1,Refined Wheat Flour,Unhealthy,Refined base with lower fiber and faster digestion.,Refined carb,
+85,Ready Biryani Pack,Ready Meals,2,Palm Oil,Unhealthy,"Common processed fat source, often raising saturated fat content.",Saturated fat,
+85,Ready Biryani Pack,Ready Meals,3,Salt,Unhealthy,Excess sodium may affect blood pressure and kidney health.,High sodium,
+85,Ready Biryani Pack,Ready Meals,4,Monosodium Glutamate,Unhealthy,May be a sensitivity trigger for some people and often comes with salty flavor profiles.,Additive sensitivity,
+85,Ready Biryani Pack,Ready Meals,5,Dehydrated Vegetables,Healthy,,,Adds some micronutrients and flavor.
+85,Ready Biryani Pack,Ready Meals,6,Spice Mix,Neutral,,,Used for taste and aroma.
+86,Ready Fried Rice Pack,Ready Meals,1,Refined Wheat Flour,Unhealthy,Refined base with lower fiber and faster digestion.,Refined carb,
+86,Ready Fried Rice Pack,Ready Meals,2,Palm Oil,Unhealthy,"Common processed fat source, often raising saturated fat content.",Saturated fat,
+86,Ready Fried Rice Pack,Ready Meals,3,Salt,Unhealthy,Excess sodium may affect blood pressure and kidney health.,High sodium,
+86,Ready Fried Rice Pack,Ready Meals,4,Monosodium Glutamate,Unhealthy,May be a sensitivity trigger for some people and often comes with salty flavor profiles.,Additive sensitivity,
+86,Ready Fried Rice Pack,Ready Meals,5,Dehydrated Vegetables,Healthy,,,Adds some micronutrients and flavor.
+86,Ready Fried Rice Pack,Ready Meals,6,Spice Mix,Neutral,,,Used for taste and aroma.
+87,Flavored Popcorn,Snacks,1,Potatoes or Corn Base,Neutral,,,Main starch base of the snack.
+87,Flavored Popcorn,Snacks,2,Vegetable Oil,Unhealthy,"Adds significant fat and calories, especially when repeatedly heated during processing.",Processed fat,
+87,Flavored Popcorn,Snacks,3,Salt,Unhealthy,High sodium may increase blood pressure and fluid retention risk.,High sodium,
+87,Flavored Popcorn,Snacks,4,Flavor Enhancers,Unhealthy,Can encourage overconsumption and often raise sodium load.,High sodium/additives,
+87,Flavored Popcorn,Snacks,5,Spices,Neutral,,,Used for flavoring.
+87,Flavored Popcorn,Snacks,6,Antioxidants,Neutral,,,Added to preserve shelf life of oils.
+88,Butter Popcorn,Snacks,1,Potatoes or Corn Base,Neutral,,,Main starch base of the snack.
+88,Butter Popcorn,Snacks,2,Vegetable Oil,Unhealthy,"Adds significant fat and calories, especially when repeatedly heated during processing.",Processed fat,
+88,Butter Popcorn,Snacks,3,Salt,Unhealthy,High sodium may increase blood pressure and fluid retention risk.,High sodium,
+88,Butter Popcorn,Snacks,4,Flavor Enhancers,Unhealthy,Can encourage overconsumption and often raise sodium load.,High sodium/additives,
+88,Butter Popcorn,Snacks,5,Spices,Neutral,,,Used for flavoring.
+88,Butter Popcorn,Snacks,6,Antioxidants,Neutral,,,Added to preserve shelf life of oils.
+89,Salted Peanuts Pack,Snacks,1,Potatoes or Corn Base,Neutral,,,Main starch base of the snack.
+89,Salted Peanuts Pack,Snacks,2,Vegetable Oil,Unhealthy,"Adds significant fat and calories, especially when repeatedly heated during processing.",Processed fat,
+89,Salted Peanuts Pack,Snacks,3,Salt,Unhealthy,High sodium may increase blood pressure and fluid retention risk.,High sodium,
+89,Salted Peanuts Pack,Snacks,4,Flavor Enhancers,Unhealthy,Can encourage overconsumption and often raise sodium load.,High sodium/additives,
+89,Salted Peanuts Pack,Snacks,5,Spices,Neutral,,,Used for flavoring.
+89,Salted Peanuts Pack,Snacks,6,Antioxidants,Neutral,,,Added to preserve shelf life of oils.
+90,Honey Roasted Peanuts,Snacks,1,Potatoes or Corn Base,Neutral,,,Main starch base of the snack.
+90,Honey Roasted Peanuts,Snacks,2,Vegetable Oil,Unhealthy,"Adds significant fat and calories, especially when repeatedly heated during processing.",Processed fat,
+90,Honey Roasted Peanuts,Snacks,3,Salt,Unhealthy,High sodium may increase blood pressure and fluid retention risk.,High sodium,
+90,Honey Roasted Peanuts,Snacks,4,Flavor Enhancers,Unhealthy,Can encourage overconsumption and often raise sodium load.,High sodium/additives,
+90,Honey Roasted Peanuts,Snacks,5,Spices,Neutral,,,Used for flavoring.
+90,Honey Roasted Peanuts,Snacks,6,Antioxidants,Neutral,,,Added to preserve shelf life of oils.
+91,Packaged Trail Mix Sweetened,Snacks,1,Sugar,Unhealthy,High added sugar can spike blood glucose and increase calorie intake with low satiety.,High sugar,
+91,Packaged Trail Mix Sweetened,Snacks,2,Glucose Syrup,Unhealthy,Rapidly absorbed sugar source that may raise blood sugar quickly.,High glycemic load,
+91,Packaged Trail Mix Sweetened,Snacks,3,Refined Wheat Flour,Unhealthy,Low fiber and highly refined; may not support blood sugar control well.,Refined carb,
+91,Packaged Trail Mix Sweetened,Snacks,4,Palm Oil,Unhealthy,High in saturated fat and commonly used in processed foods.,Saturated fat,
+91,Packaged Trail Mix Sweetened,Snacks,5,Cocoa Powder,Neutral,,,Used for flavor; can be fine in moderate amounts.
+91,Packaged Trail Mix Sweetened,Snacks,6,Soy Lecithin,Neutral,,,Emulsifier commonly used for texture and consistency.
+92,Sweet Lassi Bottle,Beverages,1,Milk Solids,Healthy,,,Provide protein and calcium.
+92,Sweet Lassi Bottle,Beverages,2,Sugar,Unhealthy,Raises added sugar content and calorie density.,High sugar,
+92,Sweet Lassi Bottle,Beverages,3,Cream,Unhealthy,Can increase saturated fat load.,Saturated fat,
+92,Sweet Lassi Bottle,Beverages,4,Stabilizers,Neutral,,,Used for consistency and shelf life.
+92,Sweet Lassi Bottle,Beverages,5,Fruit Puree or Flavor,Neutral,,,"May add taste, though sometimes only in small amounts."
+92,Sweet Lassi Bottle,Beverages,6,Cultures,Healthy,,,Beneficial in fermented dairy products like yogurt.
+93,Mango Drink,Beverages,1,Carbonated Water,Neutral,,,Base liquid component.
+93,Mango Drink,Beverages,2,High Fructose Corn Syrup,Unhealthy,"Very high added sugar load; may contribute to insulin resistance, weight gain, and fatty liver risk when consumed often.",High sugar,
+93,Mango Drink,Beverages,3,Citric Acid,Neutral,,,Used for tartness and preservation.
+93,Mango Drink,Beverages,4,Artificial Flavors,Neutral,,,Used mainly to mimic or enhance taste.
+93,Mango Drink,Beverages,5,Caffeine,Unhealthy,"May worsen caffeine sensitivity, palpitations, anxiety, or sleep disturbance in some people.",Stimulant,
+93,Mango Drink,Beverages,6,Artificial Colors,Unhealthy,May trigger sensitivity or hyperactivity concerns in some individuals.,Additive sensitivity,
+94,Artificially Flavored Water,Beverages,1,Carbonated Water,Neutral,,,Base liquid component.
+94,Artificially Flavored Water,Beverages,2,High Fructose Corn Syrup,Unhealthy,"Very high added sugar load; may contribute to insulin resistance, weight gain, and fatty liver risk when consumed often.",High sugar,
+94,Artificially Flavored Water,Beverages,3,Citric Acid,Neutral,,,Used for tartness and preservation.
+94,Artificially Flavored Water,Beverages,4,Artificial Flavors,Neutral,,,Used mainly to mimic or enhance taste.
+94,Artificially Flavored Water,Beverages,5,Caffeine,Unhealthy,"May worsen caffeine sensitivity, palpitations, anxiety, or sleep disturbance in some people.",Stimulant,
+94,Artificially Flavored Water,Beverages,6,Artificial Colors,Unhealthy,May trigger sensitivity or hyperactivity concerns in some individuals.,Additive sensitivity,
+95,Diet Soda,Beverages,1,Carbonated Water,Neutral,,,Base liquid component.
+95,Diet Soda,Beverages,2,High Fructose Corn Syrup,Unhealthy,"Very high added sugar load; may contribute to insulin resistance, weight gain, and fatty liver risk when consumed often.",High sugar,
+95,Diet Soda,Beverages,3,Citric Acid,Neutral,,,Used for tartness and preservation.
+95,Diet Soda,Beverages,4,Artificial Flavors,Neutral,,,Used mainly to mimic or enhance taste.
+95,Diet Soda,Beverages,5,Caffeine,Unhealthy,"May worsen caffeine sensitivity, palpitations, anxiety, or sleep disturbance in some people.",Stimulant,
+95,Diet Soda,Beverages,6,Artificial Colors,Unhealthy,May trigger sensitivity or hyperactivity concerns in some individuals.,Additive sensitivity,
+96,Zero Sugar Energy Drink,Beverages,1,Carbonated Water,Neutral,,,Base liquid component.
+96,Zero Sugar Energy Drink,Beverages,2,High Fructose Corn Syrup,Unhealthy,"Very high added sugar load; may contribute to insulin resistance, weight gain, and fatty liver risk when consumed often.",High sugar,
+96,Zero Sugar Energy Drink,Beverages,3,Citric Acid,Neutral,,,Used for tartness and preservation.
+96,Zero Sugar Energy Drink,Beverages,4,Artificial Flavors,Neutral,,,Used mainly to mimic or enhance taste.
+96,Zero Sugar Energy Drink,Beverages,5,Caffeine,Unhealthy,"May worsen caffeine sensitivity, palpitations, anxiety, or sleep disturbance in some people.",Stimulant,
+96,Zero Sugar Energy Drink,Beverages,6,Artificial Colors,Unhealthy,May trigger sensitivity or hyperactivity concerns in some individuals.,Additive sensitivity,
+97,Frozen Lasagna,Frozen Foods,1,Refined Flour or Breadcrumbs,Unhealthy,Processed coating/base with lower fiber.,Refined carb,
+97,Frozen Lasagna,Frozen Foods,2,Processed Cheese or Fat,Unhealthy,Can increase saturated fat and sodium.,Saturated fat/high sodium,
+97,Frozen Lasagna,Frozen Foods,3,Salt,Unhealthy,Raises sodium content substantially.,High sodium,
+97,Frozen Lasagna,Frozen Foods,4,Stabilizers,Neutral,,,Used to maintain texture.
+97,Frozen Lasagna,Frozen Foods,5,Protein Source,Healthy,,,"Provides protein, depending on product quality."
+97,Frozen Lasagna,Frozen Foods,6,Herbs and Seasonings,Neutral,,,Used for flavor.
+98,Frozen Garlic Bread,Frozen Foods,1,Refined Flour or Breadcrumbs,Unhealthy,Processed coating/base with lower fiber.,Refined carb,
+98,Frozen Garlic Bread,Frozen Foods,2,Processed Cheese or Fat,Unhealthy,Can increase saturated fat and sodium.,Saturated fat/high sodium,
+98,Frozen Garlic Bread,Frozen Foods,3,Salt,Unhealthy,Raises sodium content substantially.,High sodium,
+98,Frozen Garlic Bread,Frozen Foods,4,Stabilizers,Neutral,,,Used to maintain texture.
+98,Frozen Garlic Bread,Frozen Foods,5,Protein Source,Healthy,,,"Provides protein, depending on product quality."
+98,Frozen Garlic Bread,Frozen Foods,6,Herbs and Seasonings,Neutral,,,Used for flavor.
+99,Processed Chicken Spread,Spreads,1,Sugar,Unhealthy,Added sugar increases calorie load and may affect blood glucose.,High sugar,
+99,Processed Chicken Spread,Spreads,2,Salt,Unhealthy,Can make the product high in sodium even in small servings.,High sodium,
+99,Processed Chicken Spread,Spreads,3,Vinegar,Neutral,,,Used for acidity and preservation.
+99,Processed Chicken Spread,Spreads,4,Preservatives,Unhealthy,Frequent intake of heavily preserved foods is generally less desirable.,Additive load,
+99,Processed Chicken Spread,Spreads,5,Spices or Tomato Solids,Healthy,,,Can contribute flavor and some beneficial compounds depending on the source.
+99,Processed Chicken Spread,Spreads,6,Thickeners,Neutral,,,Used for consistency and texture.
+100,Canned Mushroom Soup,Canned Foods,1,Refined Wheat Flour,Unhealthy,Refined base with lower fiber and faster digestion.,Refined carb,
+100,Canned Mushroom Soup,Canned Foods,2,Palm Oil,Unhealthy,"Common processed fat source, often raising saturated fat content.",Saturated fat,
+100,Canned Mushroom Soup,Canned Foods,3,Salt,Unhealthy,Excess sodium may affect blood pressure and kidney health.,High sodium,
+100,Canned Mushroom Soup,Canned Foods,4,Monosodium Glutamate,Unhealthy,May be a sensitivity trigger for some people and often comes with salty flavor profiles.,Additive sensitivity,
+100,Canned Mushroom Soup,Canned Foods,5,Dehydrated Vegetables,Healthy,,,Adds some micronutrients and flavor.
+100,Canned Mushroom Soup,Canned Foods,6,Spice Mix,Neutral,,,Used for taste and aroma.
+101,Ready Mashed Potato Mix,Ready Meals,1,Refined Wheat Flour,Unhealthy,Refined base with lower fiber and faster digestion.,Refined carb,
+101,Ready Mashed Potato Mix,Ready Meals,2,Palm Oil,Unhealthy,"Common processed fat source, often raising saturated fat content.",Saturated fat,
+101,Ready Mashed Potato Mix,Ready Meals,3,Salt,Unhealthy,Excess sodium may affect blood pressure and kidney health.,High sodium,
+101,Ready Mashed Potato Mix,Ready Meals,4,Monosodium Glutamate,Unhealthy,May be a sensitivity trigger for some people and often comes with salty flavor profiles.,Additive sensitivity,
+101,Ready Mashed Potato Mix,Ready Meals,5,Dehydrated Vegetables,Healthy,,,Adds some micronutrients and flavor.
+101,Ready Mashed Potato Mix,Ready Meals,6,Spice Mix,Neutral,,,Used for taste and aroma.
+102,Instant Vermicelli Cup,Ready Meals,1,Refined Wheat Flour,Unhealthy,Refined base with lower fiber and faster digestion.,Refined carb,
+102,Instant Vermicelli Cup,Ready Meals,2,Palm Oil,Unhealthy,"Common processed fat source, often raising saturated fat content.",Saturated fat,
+102,Instant Vermicelli Cup,Ready Meals,3,Salt,Unhealthy,Excess sodium may affect blood pressure and kidney health.,High sodium,
+102,Instant Vermicelli Cup,Ready Meals,4,Monosodium Glutamate,Unhealthy,May be a sensitivity trigger for some people and often comes with salty flavor profiles.,Additive sensitivity,
+102,Instant Vermicelli Cup,Ready Meals,5,Dehydrated Vegetables,Healthy,,,Adds some micronutrients and flavor.
+102,Instant Vermicelli Cup,Ready Meals,6,Spice Mix,Neutral,,,Used for taste and aroma.
+103,Packaged Pancake Mix,Breakfast,1,Whole Grain Oats or Grain Base,Healthy,,,Can contribute fiber and longer satiety if present in meaningful amounts.
+103,Packaged Pancake Mix,Breakfast,2,Sugar,Unhealthy,Raises added sugar content.,High sugar,
+103,Packaged Pancake Mix,Breakfast,3,Malt Extract or Syrup,Unhealthy,Concentrated sweetener that may raise glycemic load.,High glycemic load,
+103,Packaged Pancake Mix,Breakfast,4,Salt,Unhealthy,Packaged breakfast foods can still contain notable sodium.,High sodium,
+103,Packaged Pancake Mix,Breakfast,5,Fortified Vitamins,Healthy,,,Added micronutrients may improve nutritional profile.
+103,Packaged Pancake Mix,Breakfast,6,Flavoring,Neutral,,,Used for taste.
+104,Maple Syrup Pancake Sauce,Condiments,1,Sugar,Unhealthy,Added sugar increases calorie load and may affect blood glucose.,High sugar,
+104,Maple Syrup Pancake Sauce,Condiments,2,Salt,Unhealthy,Can make the product high in sodium even in small servings.,High sodium,
+104,Maple Syrup Pancake Sauce,Condiments,3,Vinegar,Neutral,,,Used for acidity and preservation.
+104,Maple Syrup Pancake Sauce,Condiments,4,Preservatives,Unhealthy,Frequent intake of heavily preserved foods is generally less desirable.,Additive load,
+104,Maple Syrup Pancake Sauce,Condiments,5,Spices or Tomato Solids,Healthy,,,Can contribute flavor and some beneficial compounds depending on the source.
+104,Maple Syrup Pancake Sauce,Condiments,6,Thickeners,Neutral,,,Used for consistency and texture.
+105,Chocolate Donut,Bakery,1,Sugar,Unhealthy,High added sugar can spike blood glucose and increase calorie intake with low satiety.,High sugar,
+105,Chocolate Donut,Bakery,2,Glucose Syrup,Unhealthy,Rapidly absorbed sugar source that may raise blood sugar quickly.,High glycemic load,
+105,Chocolate Donut,Bakery,3,Refined Wheat Flour,Unhealthy,Low fiber and highly refined; may not support blood sugar control well.,Refined carb,
+105,Chocolate Donut,Bakery,4,Palm Oil,Unhealthy,High in saturated fat and commonly used in processed foods.,Saturated fat,
+105,Chocolate Donut,Bakery,5,Cocoa Powder,Neutral,,,Used for flavor; can be fine in moderate amounts.
+105,Chocolate Donut,Bakery,6,Soy Lecithin,Neutral,,,Emulsifier commonly used for texture and consistency.
+106,Vanilla Cream Bun,Bakery,1,Sugar,Unhealthy,High added sugar can spike blood glucose and increase calorie intake with low satiety.,High sugar,
+106,Vanilla Cream Bun,Bakery,2,Glucose Syrup,Unhealthy,Rapidly absorbed sugar source that may raise blood sugar quickly.,High glycemic load,
+106,Vanilla Cream Bun,Bakery,3,Refined Wheat Flour,Unhealthy,Low fiber and highly refined; may not support blood sugar control well.,Refined carb,
+106,Vanilla Cream Bun,Bakery,4,Palm Oil,Unhealthy,High in saturated fat and commonly used in processed foods.,Saturated fat,
+106,Vanilla Cream Bun,Bakery,5,Cocoa Powder,Neutral,,,Used for flavor; can be fine in moderate amounts.
+106,Vanilla Cream Bun,Bakery,6,Soy Lecithin,Neutral,,,Emulsifier commonly used for texture and consistency.
+107,Stuffed Crust Frozen Pizza,Frozen Foods,1,Refined Flour or Breadcrumbs,Unhealthy,Processed coating/base with lower fiber.,Refined carb,
+107,Stuffed Crust Frozen Pizza,Frozen Foods,2,Processed Cheese or Fat,Unhealthy,Can increase saturated fat and sodium.,Saturated fat/high sodium,
+107,Stuffed Crust Frozen Pizza,Frozen Foods,3,Salt,Unhealthy,Raises sodium content substantially.,High sodium,
+107,Stuffed Crust Frozen Pizza,Frozen Foods,4,Stabilizers,Neutral,,,Used to maintain texture.
+107,Stuffed Crust Frozen Pizza,Frozen Foods,5,Protein Source,Healthy,,,"Provides protein, depending on product quality."
+107,Stuffed Crust Frozen Pizza,Frozen Foods,6,Herbs and Seasonings,Neutral,,,Used for flavor.
+108,Frozen Spring Rolls,Frozen Foods,1,Refined Flour or Breadcrumbs,Unhealthy,Processed coating/base with lower fiber.,Refined carb,
+108,Frozen Spring Rolls,Frozen Foods,2,Processed Cheese or Fat,Unhealthy,Can increase saturated fat and sodium.,Saturated fat/high sodium,
+108,Frozen Spring Rolls,Frozen Foods,3,Salt,Unhealthy,Raises sodium content substantially.,High sodium,
+108,Frozen Spring Rolls,Frozen Foods,4,Stabilizers,Neutral,,,Used to maintain texture.
+108,Frozen Spring Rolls,Frozen Foods,5,Protein Source,Healthy,,,"Provides protein, depending on product quality."
+108,Frozen Spring Rolls,Frozen Foods,6,Herbs and Seasonings,Neutral,,,Used for flavor.
+109,Frozen Veg Cutlet,Frozen Foods,1,Refined Flour or Breadcrumbs,Unhealthy,Processed coating/base with lower fiber.,Refined carb,
+109,Frozen Veg Cutlet,Frozen Foods,2,Processed Cheese or Fat,Unhealthy,Can increase saturated fat and sodium.,Saturated fat/high sodium,
+109,Frozen Veg Cutlet,Frozen Foods,3,Salt,Unhealthy,Raises sodium content substantially.,High sodium,
+109,Frozen Veg Cutlet,Frozen Foods,4,Stabilizers,Neutral,,,Used to maintain texture.
+109,Frozen Veg Cutlet,Frozen Foods,5,Protein Source,Healthy,,,"Provides protein, depending on product quality."
+109,Frozen Veg Cutlet,Frozen Foods,6,Herbs and Seasonings,Neutral,,,Used for flavor.
+110,Frozen Chicken Cutlet,Frozen Foods,1,Refined Flour or Breadcrumbs,Unhealthy,Processed coating/base with lower fiber.,Refined carb,
+110,Frozen Chicken Cutlet,Frozen Foods,2,Processed Cheese or Fat,Unhealthy,Can increase saturated fat and sodium.,Saturated fat/high sodium,
+110,Frozen Chicken Cutlet,Frozen Foods,3,Salt,Unhealthy,Raises sodium content substantially.,High sodium,
+110,Frozen Chicken Cutlet,Frozen Foods,4,Stabilizers,Neutral,,,Used to maintain texture.
+110,Frozen Chicken Cutlet,Frozen Foods,5,Protein Source,Healthy,,,"Provides protein, depending on product quality."
+110,Frozen Chicken Cutlet,Frozen Foods,6,Herbs and Seasonings,Neutral,,,Used for flavor.
+111,Sausage Roll Pack,Bakery,1,Sugar,Unhealthy,High added sugar can spike blood glucose and increase calorie intake with low satiety.,High sugar,
+111,Sausage Roll Pack,Bakery,2,Glucose Syrup,Unhealthy,Rapidly absorbed sugar source that may raise blood sugar quickly.,High glycemic load,
+111,Sausage Roll Pack,Bakery,3,Refined Wheat Flour,Unhealthy,Low fiber and highly refined; may not support blood sugar control well.,Refined carb,
+111,Sausage Roll Pack,Bakery,4,Palm Oil,Unhealthy,High in saturated fat and commonly used in processed foods.,Saturated fat,
+111,Sausage Roll Pack,Bakery,5,Cocoa Powder,Neutral,,,Used for flavor; can be fine in moderate amounts.
+111,Sausage Roll Pack,Bakery,6,Soy Lecithin,Neutral,,,Emulsifier commonly used for texture and consistency.
+112,Cream-filled Wafer Roll,Confectionery,1,Sugar,Unhealthy,High added sugar can spike blood glucose and increase calorie intake with low satiety.,High sugar,
+112,Cream-filled Wafer Roll,Confectionery,2,Glucose Syrup,Unhealthy,Rapidly absorbed sugar source that may raise blood sugar quickly.,High glycemic load,
+112,Cream-filled Wafer Roll,Confectionery,3,Refined Wheat Flour,Unhealthy,Low fiber and highly refined; may not support blood sugar control well.,Refined carb,
+112,Cream-filled Wafer Roll,Confectionery,4,Palm Oil,Unhealthy,High in saturated fat and commonly used in processed foods.,Saturated fat,
+112,Cream-filled Wafer Roll,Confectionery,5,Cocoa Powder,Neutral,,,Used for flavor; can be fine in moderate amounts.
+112,Cream-filled Wafer Roll,Confectionery,6,Soy Lecithin,Neutral,,,Emulsifier commonly used for texture and consistency.
+113,Caramel Candy,Confectionery,1,Sugar,Unhealthy,High added sugar can spike blood glucose and increase calorie intake with low satiety.,High sugar,
+113,Caramel Candy,Confectionery,2,Glucose Syrup,Unhealthy,Rapidly absorbed sugar source that may raise blood sugar quickly.,High glycemic load,
+113,Caramel Candy,Confectionery,3,Refined Wheat Flour,Unhealthy,Low fiber and highly refined; may not support blood sugar control well.,Refined carb,
+113,Caramel Candy,Confectionery,4,Palm Oil,Unhealthy,High in saturated fat and commonly used in processed foods.,Saturated fat,
+113,Caramel Candy,Confectionery,5,Cocoa Powder,Neutral,,,Used for flavor; can be fine in moderate amounts.
+113,Caramel Candy,Confectionery,6,Soy Lecithin,Neutral,,,Emulsifier commonly used for texture and consistency.
+114,Fruit Chew Candy,Confectionery,1,Sugar,Unhealthy,High added sugar can spike blood glucose and increase calorie intake with low satiety.,High sugar,
+114,Fruit Chew Candy,Confectionery,2,Glucose Syrup,Unhealthy,Rapidly absorbed sugar source that may raise blood sugar quickly.,High glycemic load,
+114,Fruit Chew Candy,Confectionery,3,Refined Wheat Flour,Unhealthy,Low fiber and highly refined; may not support blood sugar control well.,Refined carb,
+114,Fruit Chew Candy,Confectionery,4,Palm Oil,Unhealthy,High in saturated fat and commonly used in processed foods.,Saturated fat,
+114,Fruit Chew Candy,Confectionery,5,Cocoa Powder,Neutral,,,Used for flavor; can be fine in moderate amounts.
+114,Fruit Chew Candy,Confectionery,6,Soy Lecithin,Neutral,,,Emulsifier commonly used for texture and consistency.
+115,Ready Protein Shake,Beverages,1,Carbonated Water,Neutral,,,Base liquid component.
+115,Ready Protein Shake,Beverages,2,High Fructose Corn Syrup,Unhealthy,"Very high added sugar load; may contribute to insulin resistance, weight gain, and fatty liver risk when consumed often.",High sugar,
+115,Ready Protein Shake,Beverages,3,Citric Acid,Neutral,,,Used for tartness and preservation.
+115,Ready Protein Shake,Beverages,4,Artificial Flavors,Neutral,,,Used mainly to mimic or enhance taste.
+115,Ready Protein Shake,Beverages,5,Caffeine,Unhealthy,"May worsen caffeine sensitivity, palpitations, anxiety, or sleep disturbance in some people.",Stimulant,
+115,Ready Protein Shake,Beverages,6,Artificial Colors,Unhealthy,May trigger sensitivity or hyperactivity concerns in some individuals.,Additive sensitivity,
+116,Meal Replacement Drink,Beverages,1,Carbonated Water,Neutral,,,Base liquid component.
+116,Meal Replacement Drink,Beverages,2,High Fructose Corn Syrup,Unhealthy,"Very high added sugar load; may contribute to insulin resistance, weight gain, and fatty liver risk when consumed often.",High sugar,
+116,Meal Replacement Drink,Beverages,3,Citric Acid,Neutral,,,Used for tartness and preservation.
+116,Meal Replacement Drink,Beverages,4,Artificial Flavors,Neutral,,,Used mainly to mimic or enhance taste.
+116,Meal Replacement Drink,Beverages,5,Caffeine,Unhealthy,"May worsen caffeine sensitivity, palpitations, anxiety, or sleep disturbance in some people.",Stimulant,
+116,Meal Replacement Drink,Beverages,6,Artificial Colors,Unhealthy,May trigger sensitivity or hyperactivity concerns in some individuals.,Additive sensitivity,
+117,Instant Noodle Cup Spicy,Ready Meals,1,Refined Wheat Flour,Unhealthy,Refined base with lower fiber and faster digestion.,Refined carb,
+117,Instant Noodle Cup Spicy,Ready Meals,2,Palm Oil,Unhealthy,"Common processed fat source, often raising saturated fat content.",Saturated fat,
+117,Instant Noodle Cup Spicy,Ready Meals,3,Salt,Unhealthy,Excess sodium may affect blood pressure and kidney health.,High sodium,
+117,Instant Noodle Cup Spicy,Ready Meals,4,Monosodium Glutamate,Unhealthy,May be a sensitivity trigger for some people and often comes with salty flavor profiles.,Additive sensitivity,
+117,Instant Noodle Cup Spicy,Ready Meals,5,Dehydrated Vegetables,Healthy,,,Adds some micronutrients and flavor.
+117,Instant Noodle Cup Spicy,Ready Meals,6,Spice Mix,Neutral,,,Used for taste and aroma.
+118,Masala Chips,Snacks,1,Potatoes or Corn Base,Neutral,,,Main starch base of the snack.
+118,Masala Chips,Snacks,2,Vegetable Oil,Unhealthy,"Adds significant fat and calories, especially when repeatedly heated during processing.",Processed fat,
+118,Masala Chips,Snacks,3,Salt,Unhealthy,High sodium may increase blood pressure and fluid retention risk.,High sodium,
+118,Masala Chips,Snacks,4,Flavor Enhancers,Unhealthy,Can encourage overconsumption and often raise sodium load.,High sodium/additives,
+118,Masala Chips,Snacks,5,Spices,Neutral,,,Used for flavoring.
+118,Masala Chips,Snacks,6,Antioxidants,Neutral,,,Added to preserve shelf life of oils.
+119,Cheese Crackers,Snacks,1,Potatoes or Corn Base,Neutral,,,Main starch base of the snack.
+119,Cheese Crackers,Snacks,2,Vegetable Oil,Unhealthy,"Adds significant fat and calories, especially when repeatedly heated during processing.",Processed fat,
+119,Cheese Crackers,Snacks,3,Salt,Unhealthy,High sodium may increase blood pressure and fluid retention risk.,High sodium,
+119,Cheese Crackers,Snacks,4,Flavor Enhancers,Unhealthy,Can encourage overconsumption and often raise sodium load.,High sodium/additives,
+119,Cheese Crackers,Snacks,5,Spices,Neutral,,,Used for flavoring.
+119,Cheese Crackers,Snacks,6,Antioxidants,Neutral,,,Added to preserve shelf life of oils.
+120,Packaged Rusk,Bakery,1,Sugar,Unhealthy,High added sugar can spike blood glucose and increase calorie intake with low satiety.,High sugar,
+120,Packaged Rusk,Bakery,2,Glucose Syrup,Unhealthy,Rapidly absorbed sugar source that may raise blood sugar quickly.,High glycemic load,
+120,Packaged Rusk,Bakery,3,Refined Wheat Flour,Unhealthy,Low fiber and highly refined; may not support blood sugar control well.,Refined carb,
+120,Packaged Rusk,Bakery,4,Palm Oil,Unhealthy,High in saturated fat and commonly used in processed foods.,Saturated fat,
+120,Packaged Rusk,Bakery,5,Cocoa Powder,Neutral,,,Used for flavor; can be fine in moderate amounts.
+120,Packaged Rusk,Bakery,6,Soy Lecithin,Neutral,,,Emulsifier commonly used for texture and consistency.
+121,Milk Rusks Sweetened,Bakery,1,Sugar,Unhealthy,High added sugar can spike blood glucose and increase calorie intake with low satiety.,High sugar,
+121,Milk Rusks Sweetened,Bakery,2,Glucose Syrup,Unhealthy,Rapidly absorbed sugar source that may raise blood sugar quickly.,High glycemic load,
+121,Milk Rusks Sweetened,Bakery,3,Refined Wheat Flour,Unhealthy,Low fiber and highly refined; may not support blood sugar control well.,Refined carb,
+121,Milk Rusks Sweetened,Bakery,4,Palm Oil,Unhealthy,High in saturated fat and commonly used in processed foods.,Saturated fat,
+121,Milk Rusks Sweetened,Bakery,5,Cocoa Powder,Neutral,,,Used for flavor; can be fine in moderate amounts.
+121,Milk Rusks Sweetened,Bakery,6,Soy Lecithin,Neutral,,,Emulsifier commonly used for texture and consistency.
+122,Ready Taco Shells,Ready Meals,1,Refined Wheat Flour,Unhealthy,Refined base with lower fiber and faster digestion.,Refined carb,
+122,Ready Taco Shells,Ready Meals,2,Palm Oil,Unhealthy,"Common processed fat source, often raising saturated fat content.",Saturated fat,
+122,Ready Taco Shells,Ready Meals,3,Salt,Unhealthy,Excess sodium may affect blood pressure and kidney health.,High sodium,
+122,Ready Taco Shells,Ready Meals,4,Monosodium Glutamate,Unhealthy,May be a sensitivity trigger for some people and often comes with salty flavor profiles.,Additive sensitivity,
+122,Ready Taco Shells,Ready Meals,5,Dehydrated Vegetables,Healthy,,,Adds some micronutrients and flavor.
+122,Ready Taco Shells,Ready Meals,6,Spice Mix,Neutral,,,Used for taste and aroma.
+123,Processed Salsa Dip,Condiments,1,Sugar,Unhealthy,Added sugar increases calorie load and may affect blood glucose.,High sugar,
+123,Processed Salsa Dip,Condiments,2,Salt,Unhealthy,Can make the product high in sodium even in small servings.,High sodium,
+123,Processed Salsa Dip,Condiments,3,Vinegar,Neutral,,,Used for acidity and preservation.
+123,Processed Salsa Dip,Condiments,4,Preservatives,Unhealthy,Frequent intake of heavily preserved foods is generally less desirable.,Additive load,
+123,Processed Salsa Dip,Condiments,5,Spices or Tomato Solids,Healthy,,,Can contribute flavor and some beneficial compounds depending on the source.
+123,Processed Salsa Dip,Condiments,6,Thickeners,Neutral,,,Used for consistency and texture.
+124,Canned Corned Beef,Canned Foods,1,Meat,Neutral,,,Primary protein source.
+124,Canned Corned Beef,Canned Foods,2,Salt,Unhealthy,Processed meats are often high in sodium.,High sodium,
+124,Canned Corned Beef,Canned Foods,3,Sodium Nitrite,Unhealthy,Curing preservative; frequent intake of processed meats is generally considered less healthy.,Preservative,
+124,Canned Corned Beef,Canned Foods,4,Starch,Neutral,,,Used for texture and binding.
+124,Canned Corned Beef,Canned Foods,5,Protein Isolate,Neutral,,,Added to improve texture or protein content.
+124,Canned Corned Beef,Canned Foods,6,Spices,Neutral,,,Used for taste.
+125,Canned Sardines in Sauce,Canned Foods,1,Meat,Neutral,,,Primary protein source.
+125,Canned Sardines in Sauce,Canned Foods,2,Salt,Unhealthy,Processed meats are often high in sodium.,High sodium,
+125,Canned Sardines in Sauce,Canned Foods,3,Sodium Nitrite,Unhealthy,Curing preservative; frequent intake of processed meats is generally considered less healthy.,Preservative,
+125,Canned Sardines in Sauce,Canned Foods,4,Starch,Neutral,,,Used for texture and binding.
+125,Canned Sardines in Sauce,Canned Foods,5,Protein Isolate,Neutral,,,Added to improve texture or protein content.
+125,Canned Sardines in Sauce,Canned Foods,6,Spices,Neutral,,,Used for taste.
+126,Instant Hot Chocolate Mix,Beverages,1,Carbonated Water,Neutral,,,Base liquid component.
+126,Instant Hot Chocolate Mix,Beverages,2,High Fructose Corn Syrup,Unhealthy,"Very high added sugar load; may contribute to insulin resistance, weight gain, and fatty liver risk when consumed often.",High sugar,
+126,Instant Hot Chocolate Mix,Beverages,3,Citric Acid,Neutral,,,Used for tartness and preservation.
+126,Instant Hot Chocolate Mix,Beverages,4,Artificial Flavors,Neutral,,,Used mainly to mimic or enhance taste.
+126,Instant Hot Chocolate Mix,Beverages,5,Caffeine,Unhealthy,"May worsen caffeine sensitivity, palpitations, anxiety, or sleep disturbance in some people.",Stimulant,
+126,Instant Hot Chocolate Mix,Beverages,6,Artificial Colors,Unhealthy,May trigger sensitivity or hyperactivity concerns in some individuals.,Additive sensitivity,
+127,Sweetened Coconut Drink,Beverages,1,Milk Solids,Healthy,,,Provide protein and calcium.
+127,Sweetened Coconut Drink,Beverages,2,Sugar,Unhealthy,Raises added sugar content and calorie density.,High sugar,
+127,Sweetened Coconut Drink,Beverages,3,Cream,Unhealthy,Can increase saturated fat load.,Saturated fat,
+127,Sweetened Coconut Drink,Beverages,4,Stabilizers,Neutral,,,Used for consistency and shelf life.
+127,Sweetened Coconut Drink,Beverages,5,Fruit Puree or Flavor,Neutral,,,"May add taste, though sometimes only in small amounts."
+127,Sweetened Coconut Drink,Beverages,6,Cultures,Healthy,,,Beneficial in fermented dairy products like yogurt.
+128,Frozen Cheese Balls,Frozen Foods,1,Refined Flour or Breadcrumbs,Unhealthy,Processed coating/base with lower fiber.,Refined carb,
+128,Frozen Cheese Balls,Frozen Foods,2,Processed Cheese or Fat,Unhealthy,Can increase saturated fat and sodium.,Saturated fat/high sodium,
+128,Frozen Cheese Balls,Frozen Foods,3,Salt,Unhealthy,Raises sodium content substantially.,High sodium,
+128,Frozen Cheese Balls,Frozen Foods,4,Stabilizers,Neutral,,,Used to maintain texture.
+128,Frozen Cheese Balls,Frozen Foods,5,Protein Source,Healthy,,,"Provides protein, depending on product quality."
+128,Frozen Cheese Balls,Frozen Foods,6,Herbs and Seasonings,Neutral,,,Used for flavor.
+129,Processed Mozzarella Shreds,Dairy,1,Milk Solids,Healthy,,,Provide protein and calcium.
+129,Processed Mozzarella Shreds,Dairy,2,Sugar,Unhealthy,Raises added sugar content and calorie density.,High sugar,
+129,Processed Mozzarella Shreds,Dairy,3,Cream,Unhealthy,Can increase saturated fat load.,Saturated fat,
+129,Processed Mozzarella Shreds,Dairy,4,Stabilizers,Neutral,,,Used for consistency and shelf life.
+129,Processed Mozzarella Shreds,Dairy,5,Fruit Puree or Flavor,Neutral,,,"May add taste, though sometimes only in small amounts."
+129,Processed Mozzarella Shreds,Dairy,6,Cultures,Healthy,,,Beneficial in fermented dairy products like yogurt.
+130,Cheese-filled Nachos,Snacks,1,Potatoes or Corn Base,Neutral,,,Main starch base of the snack.
+130,Cheese-filled Nachos,Snacks,2,Vegetable Oil,Unhealthy,"Adds significant fat and calories, especially when repeatedly heated during processing.",Processed fat,
+130,Cheese-filled Nachos,Snacks,3,Salt,Unhealthy,High sodium may increase blood pressure and fluid retention risk.,High sodium,
+130,Cheese-filled Nachos,Snacks,4,Flavor Enhancers,Unhealthy,Can encourage overconsumption and often raise sodium load.,High sodium/additives,
+130,Cheese-filled Nachos,Snacks,5,Spices,Neutral,,,Used for flavoring.
+130,Cheese-filled Nachos,Snacks,6,Antioxidants,Neutral,,,Added to preserve shelf life of oils.
+131,Baked Snack Sticks,Snacks,1,Potatoes or Corn Base,Neutral,,,Main starch base of the snack.
+131,Baked Snack Sticks,Snacks,2,Vegetable Oil,Unhealthy,"Adds significant fat and calories, especially when repeatedly heated during processing.",Processed fat,
+131,Baked Snack Sticks,Snacks,3,Salt,Unhealthy,High sodium may increase blood pressure and fluid retention risk.,High sodium,
+131,Baked Snack Sticks,Snacks,4,Flavor Enhancers,Unhealthy,Can encourage overconsumption and often raise sodium load.,High sodium/additives,
+131,Baked Snack Sticks,Snacks,5,Spices,Neutral,,,Used for flavoring.
+131,Baked Snack Sticks,Snacks,6,Antioxidants,Neutral,,,Added to preserve shelf life of oils.
+132,Sweetened Applesauce Cup,Desserts,1,Milk Solids,Healthy,,,Provide protein and calcium.
+132,Sweetened Applesauce Cup,Desserts,2,Sugar,Unhealthy,Raises added sugar content and calorie density.,High sugar,
+132,Sweetened Applesauce Cup,Desserts,3,Cream,Unhealthy,Can increase saturated fat load.,Saturated fat,
+132,Sweetened Applesauce Cup,Desserts,4,Stabilizers,Neutral,,,Used for consistency and shelf life.
+132,Sweetened Applesauce Cup,Desserts,5,Fruit Puree or Flavor,Neutral,,,"May add taste, though sometimes only in small amounts."
+132,Sweetened Applesauce Cup,Desserts,6,Cultures,Healthy,,,Beneficial in fermented dairy products like yogurt.
+133,Pudding Cup,Desserts,1,Milk Solids,Healthy,,,Provide protein and calcium.
+133,Pudding Cup,Desserts,2,Sugar,Unhealthy,Raises added sugar content and calorie density.,High sugar,
+133,Pudding Cup,Desserts,3,Cream,Unhealthy,Can increase saturated fat load.,Saturated fat,
+133,Pudding Cup,Desserts,4,Stabilizers,Neutral,,,Used for consistency and shelf life.
+133,Pudding Cup,Desserts,5,Fruit Puree or Flavor,Neutral,,,"May add taste, though sometimes only in small amounts."
+133,Pudding Cup,Desserts,6,Cultures,Healthy,,,Beneficial in fermented dairy products like yogurt.
+134,Custard Cup,Desserts,1,Milk Solids,Healthy,,,Provide protein and calcium.
+134,Custard Cup,Desserts,2,Sugar,Unhealthy,Raises added sugar content and calorie density.,High sugar,
+134,Custard Cup,Desserts,3,Cream,Unhealthy,Can increase saturated fat load.,Saturated fat,
+134,Custard Cup,Desserts,4,Stabilizers,Neutral,,,Used for consistency and shelf life.
+134,Custard Cup,Desserts,5,Fruit Puree or Flavor,Neutral,,,"May add taste, though sometimes only in small amounts."
+134,Custard Cup,Desserts,6,Cultures,Healthy,,,Beneficial in fermented dairy products like yogurt.
+135,Ready Sandwich Spread,Spreads,1,Sugar,Unhealthy,Added sugar increases calorie load and may affect blood glucose.,High sugar,
+135,Ready Sandwich Spread,Spreads,2,Salt,Unhealthy,Can make the product high in sodium even in small servings.,High sodium,
+135,Ready Sandwich Spread,Spreads,3,Vinegar,Neutral,,,Used for acidity and preservation.
+135,Ready Sandwich Spread,Spreads,4,Preservatives,Unhealthy,Frequent intake of heavily preserved foods is generally less desirable.,Additive load,
+135,Ready Sandwich Spread,Spreads,5,Spices or Tomato Solids,Healthy,,,Can contribute flavor and some beneficial compounds depending on the source.
+135,Ready Sandwich Spread,Spreads,6,Thickeners,Neutral,,,Used for consistency and texture.
+136,Instant Shake Powder,Beverages,1,Carbonated Water,Neutral,,,Base liquid component.
+136,Instant Shake Powder,Beverages,2,High Fructose Corn Syrup,Unhealthy,"Very high added sugar load; may contribute to insulin resistance, weight gain, and fatty liver risk when consumed often.",High sugar,
+136,Instant Shake Powder,Beverages,3,Citric Acid,Neutral,,,Used for tartness and preservation.
+136,Instant Shake Powder,Beverages,4,Artificial Flavors,Neutral,,,Used mainly to mimic or enhance taste.
+136,Instant Shake Powder,Beverages,5,Caffeine,Unhealthy,"May worsen caffeine sensitivity, palpitations, anxiety, or sleep disturbance in some people.",Stimulant,
+136,Instant Shake Powder,Beverages,6,Artificial Colors,Unhealthy,May trigger sensitivity or hyperactivity concerns in some individuals.,Additive sensitivity,
+137,Sweet Protein Cookie,Bakery,1,Sugar,Unhealthy,High added sugar can spike blood glucose and increase calorie intake with low satiety.,High sugar,
+137,Sweet Protein Cookie,Bakery,2,Glucose Syrup,Unhealthy,Rapidly absorbed sugar source that may raise blood sugar quickly.,High glycemic load,
+137,Sweet Protein Cookie,Bakery,3,Refined Wheat Flour,Unhealthy,Low fiber and highly refined; may not support blood sugar control well.,Refined carb,
+137,Sweet Protein Cookie,Bakery,4,Palm Oil,Unhealthy,High in saturated fat and commonly used in processed foods.,Saturated fat,
+137,Sweet Protein Cookie,Bakery,5,Cocoa Powder,Neutral,,,Used for flavor; can be fine in moderate amounts.
+137,Sweet Protein Cookie,Bakery,6,Soy Lecithin,Neutral,,,Emulsifier commonly used for texture and consistency.
+138,Breakfast Sausage Links,Meat,1,Meat,Neutral,,,Primary protein source.
+138,Breakfast Sausage Links,Meat,2,Salt,Unhealthy,Processed meats are often high in sodium.,High sodium,
+138,Breakfast Sausage Links,Meat,3,Sodium Nitrite,Unhealthy,Curing preservative; frequent intake of processed meats is generally considered less healthy.,Preservative,
+138,Breakfast Sausage Links,Meat,4,Starch,Neutral,,,Used for texture and binding.
+138,Breakfast Sausage Links,Meat,5,Protein Isolate,Neutral,,,Added to improve texture or protein content.
+138,Breakfast Sausage Links,Meat,6,Spices,Neutral,,,Used for taste.
+139,Ready Nacho Cheese Sauce,Condiments,1,Sugar,Unhealthy,Added sugar increases calorie load and may affect blood glucose.,High sugar,
+139,Ready Nacho Cheese Sauce,Condiments,2,Salt,Unhealthy,Can make the product high in sodium even in small servings.,High sodium,
+139,Ready Nacho Cheese Sauce,Condiments,3,Vinegar,Neutral,,,Used for acidity and preservation.
+139,Ready Nacho Cheese Sauce,Condiments,4,Preservatives,Unhealthy,Frequent intake of heavily preserved foods is generally less desirable.,Additive load,
+139,Ready Nacho Cheese Sauce,Condiments,5,Spices or Tomato Solids,Healthy,,,Can contribute flavor and some beneficial compounds depending on the source.
+139,Ready Nacho Cheese Sauce,Condiments,6,Thickeners,Neutral,,,Used for consistency and texture.
+140,Canned Chili Beans,Canned Foods,1,Refined Wheat Flour,Unhealthy,Refined base with lower fiber and faster digestion.,Refined carb,
+140,Canned Chili Beans,Canned Foods,2,Palm Oil,Unhealthy,"Common processed fat source, often raising saturated fat content.",Saturated fat,
+140,Canned Chili Beans,Canned Foods,3,Salt,Unhealthy,Excess sodium may affect blood pressure and kidney health.,High sodium,
+140,Canned Chili Beans,Canned Foods,4,Monosodium Glutamate,Unhealthy,May be a sensitivity trigger for some people and often comes with salty flavor profiles.,Additive sensitivity,
+140,Canned Chili Beans,Canned Foods,5,Dehydrated Vegetables,Healthy,,,Adds some micronutrients and flavor.
+140,Canned Chili Beans,Canned Foods,6,Spice Mix,Neutral,,,Used for taste and aroma.
+141,Frozen Waffles,Breakfast,1,Whole Grain Oats or Grain Base,Healthy,,,Can contribute fiber and longer satiety if present in meaningful amounts.
+141,Frozen Waffles,Breakfast,2,Sugar,Unhealthy,Raises added sugar content.,High sugar,
+141,Frozen Waffles,Breakfast,3,Malt Extract or Syrup,Unhealthy,Concentrated sweetener that may raise glycemic load.,High glycemic load,
+141,Frozen Waffles,Breakfast,4,Salt,Unhealthy,Packaged breakfast foods can still contain notable sodium.,High sodium,
+141,Frozen Waffles,Breakfast,5,Fortified Vitamins,Healthy,,,Added micronutrients may improve nutritional profile.
+141,Frozen Waffles,Breakfast,6,Flavoring,Neutral,,,Used for taste.
+142,Chocolate Syrup,Condiments,1,Sugar,Unhealthy,Added sugar increases calorie load and may affect blood glucose.,High sugar,
+142,Chocolate Syrup,Condiments,2,Salt,Unhealthy,Can make the product high in sodium even in small servings.,High sodium,
+142,Chocolate Syrup,Condiments,3,Vinegar,Neutral,,,Used for acidity and preservation.
+142,Chocolate Syrup,Condiments,4,Preservatives,Unhealthy,Frequent intake of heavily preserved foods is generally less desirable.,Additive load,
+142,Chocolate Syrup,Condiments,5,Spices or Tomato Solids,Healthy,,,Can contribute flavor and some beneficial compounds depending on the source.
+142,Chocolate Syrup,Condiments,6,Thickeners,Neutral,,,Used for consistency and texture.
+143,Strawberry Syrup,Condiments,1,Sugar,Unhealthy,Added sugar increases calorie load and may affect blood glucose.,High sugar,
+143,Strawberry Syrup,Condiments,2,Salt,Unhealthy,Can make the product high in sodium even in small servings.,High sodium,
+143,Strawberry Syrup,Condiments,3,Vinegar,Neutral,,,Used for acidity and preservation.
+143,Strawberry Syrup,Condiments,4,Preservatives,Unhealthy,Frequent intake of heavily preserved foods is generally less desirable.,Additive load,
+143,Strawberry Syrup,Condiments,5,Spices or Tomato Solids,Healthy,,,Can contribute flavor and some beneficial compounds depending on the source.
+143,Strawberry Syrup,Condiments,6,Thickeners,Neutral,,,Used for consistency and texture.
+144,Processed Veg Sausage,Meat,1,Meat,Neutral,,,Primary protein source.
+144,Processed Veg Sausage,Meat,2,Salt,Unhealthy,Processed meats are often high in sodium.,High sodium,
+144,Processed Veg Sausage,Meat,3,Sodium Nitrite,Unhealthy,Curing preservative; frequent intake of processed meats is generally considered less healthy.,Preservative,
+144,Processed Veg Sausage,Meat,4,Starch,Neutral,,,Used for texture and binding.
+144,Processed Veg Sausage,Meat,5,Protein Isolate,Neutral,,,Added to improve texture or protein content.
+144,Processed Veg Sausage,Meat,6,Spices,Neutral,,,Used for taste.
+145,Ready Soup Cup,Ready Meals,1,Refined Wheat Flour,Unhealthy,Refined base with lower fiber and faster digestion.,Refined carb,
+145,Ready Soup Cup,Ready Meals,2,Palm Oil,Unhealthy,"Common processed fat source, often raising saturated fat content.",Saturated fat,
+145,Ready Soup Cup,Ready Meals,3,Salt,Unhealthy,Excess sodium may affect blood pressure and kidney health.,High sodium,
+145,Ready Soup Cup,Ready Meals,4,Monosodium Glutamate,Unhealthy,May be a sensitivity trigger for some people and often comes with salty flavor profiles.,Additive sensitivity,
+145,Ready Soup Cup,Ready Meals,5,Dehydrated Vegetables,Healthy,,,Adds some micronutrients and flavor.
+145,Ready Soup Cup,Ready Meals,6,Spice Mix,Neutral,,,Used for taste and aroma.
+146,Microwave Macaroni Bowl,Ready Meals,1,Refined Wheat Flour,Unhealthy,Refined base with lower fiber and faster digestion.,Refined carb,
+146,Microwave Macaroni Bowl,Ready Meals,2,Palm Oil,Unhealthy,"Common processed fat source, often raising saturated fat content.",Saturated fat,
+146,Microwave Macaroni Bowl,Ready Meals,3,Salt,Unhealthy,Excess sodium may affect blood pressure and kidney health.,High sodium,
+146,Microwave Macaroni Bowl,Ready Meals,4,Monosodium Glutamate,Unhealthy,May be a sensitivity trigger for some people and often comes with salty flavor profiles.,Additive sensitivity,
+146,Microwave Macaroni Bowl,Ready Meals,5,Dehydrated Vegetables,Healthy,,,Adds some micronutrients and flavor.
+146,Microwave Macaroni Bowl,Ready Meals,6,Spice Mix,Neutral,,,Used for taste and aroma.
+147,Frozen Alfredo Pasta,Frozen Foods,1,Refined Flour or Breadcrumbs,Unhealthy,Processed coating/base with lower fiber.,Refined carb,
+147,Frozen Alfredo Pasta,Frozen Foods,2,Processed Cheese or Fat,Unhealthy,Can increase saturated fat and sodium.,Saturated fat/high sodium,
+147,Frozen Alfredo Pasta,Frozen Foods,3,Salt,Unhealthy,Raises sodium content substantially.,High sodium,
+147,Frozen Alfredo Pasta,Frozen Foods,4,Stabilizers,Neutral,,,Used to maintain texture.
+147,Frozen Alfredo Pasta,Frozen Foods,5,Protein Source,Healthy,,,"Provides protein, depending on product quality."
+147,Frozen Alfredo Pasta,Frozen Foods,6,Herbs and Seasonings,Neutral,,,Used for flavor.
+148,Processed Creamer Powder,Beverages,1,Carbonated Water,Neutral,,,Base liquid component.
+148,Processed Creamer Powder,Beverages,2,High Fructose Corn Syrup,Unhealthy,"Very high added sugar load; may contribute to insulin resistance, weight gain, and fatty liver risk when consumed often.",High sugar,
+148,Processed Creamer Powder,Beverages,3,Citric Acid,Neutral,,,Used for tartness and preservation.
+148,Processed Creamer Powder,Beverages,4,Artificial Flavors,Neutral,,,Used mainly to mimic or enhance taste.
+148,Processed Creamer Powder,Beverages,5,Caffeine,Unhealthy,"May worsen caffeine sensitivity, palpitations, anxiety, or sleep disturbance in some people.",Stimulant,
+148,Processed Creamer Powder,Beverages,6,Artificial Colors,Unhealthy,May trigger sensitivity or hyperactivity concerns in some individuals.,Additive sensitivity,
+149,Sweetened Condensed Milk,Dairy,1,Milk Solids,Healthy,,,Provide protein and calcium.
+149,Sweetened Condensed Milk,Dairy,2,Sugar,Unhealthy,Raises added sugar content and calorie density.,High sugar,
+149,Sweetened Condensed Milk,Dairy,3,Cream,Unhealthy,Can increase saturated fat load.,Saturated fat,
+149,Sweetened Condensed Milk,Dairy,4,Stabilizers,Neutral,,,Used for consistency and shelf life.
+149,Sweetened Condensed Milk,Dairy,5,Fruit Puree or Flavor,Neutral,,,"May add taste, though sometimes only in small amounts."
+149,Sweetened Condensed Milk,Dairy,6,Cultures,Healthy,,,Beneficial in fermented dairy products like yogurt.

@@ -1,0 +1,16 @@
+services:
+  - type: web
+    name: food-recommendation-backend
+    env: node
+    region: oregon
+    plan: free
+    buildCommand: npm install
+    startCommand: node server.js
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        value: 5000
+    routes:
+      - path: /
+        matchType: prefix
