@@ -26,6 +26,12 @@ export function HealthRiskAnalysisPage() {
   const repo = useMemo(() => new FoodRepository({ mode: "json" }), []);
   const facade = useMemo(() => new RecommendationFacade(repo), [repo]);
 
+  // Load user profile - will trigger re-analysis when it changes
+  const session = useMemo(() => getSession(), []);
+  const userProfile = useMemo(() => {
+    return session?.email ? loadUserProfileInput(session.email) ?? defaultUserProfileInput() : defaultUserProfileInput();
+  }, [session?.email]);
+
   const [result, setResult] = useState<FoodAnalysisResult | null>(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
@@ -39,9 +45,8 @@ export function HealthRiskAnalysisPage() {
         setResult(null);
 
         if (!Number.isFinite(foodId)) throw new Error("Invalid food id.");
-        const session = getSession();
-        const user = session?.email ? loadUserProfileInput(session.email) ?? defaultUserProfileInput() : defaultUserProfileInput();
-        const analysis = await facade.analyzeFood({ foodId, user, alternativesLimit: 0 });
+        
+        const analysis = await facade.analyzeFood({ foodId, user: userProfile, alternativesLimit: 0 });
         if (!cancelled) setResult(analysis);
       } catch (e) {
         if (!cancelled) setError(e instanceof Error ? e.message : "Failed to compute analysis.");
@@ -53,7 +58,7 @@ export function HealthRiskAnalysisPage() {
     return () => {
       cancelled = true;
     };
-  }, [foodId, facade]);
+  }, [foodId, facade, userProfile]);
 
   const unhealthyIngredients = result?.ingredients.filter((i) => i.ingredientType === "Unhealthy") ?? [];
 

@@ -1,7 +1,5 @@
 import { dbClient } from "../../lib/database/dbClient";
 
-const API_BASE = 'http://localhost:5000/api/db';
-
 export type CommunityPost = {
   id: string;
   authorName: string;
@@ -32,11 +30,11 @@ export async function loadCommunityPosts(): Promise<CommunityPost[]> {
       imageDataUrl: p.imageDataUrl,
       createdAt: p.createdAt || Date.now(),
       likes: p.likes || 0,
-      likedByEmails: [],
+      likedByEmails: p.likedByEmails || [],
       comments: p.comments || [],
     }));
   } catch (e) {
-    console.error('Error loading community posts:', e);
+    console.error('[communityStorage] Error loading community posts:', e);
     return [];
   }
 }
@@ -73,43 +71,34 @@ export async function addCommunityPost(params: {
     }
     return null;
   } catch (e) {
-    console.error('Error adding community post:', e);
+    console.error('[communityStorage] Error adding community post:', e);
     throw e;
   }
 }
 
-export async function toggleLike(postId: string, user: { email: string; name: string }): Promise<void> {
+export async function toggleLike(postId: string, user: { email: string; name: string }): Promise<boolean> {
   try {
-    const res = await fetch(`${API_BASE}/community/${postId}/like`, {
-      method: 'PUT',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ userEmail: user.email, userName: user.name }),
-    });
-    if (!res.ok) {
-      throw new Error('Failed to toggle like');
-    }
+    console.log(`[communityStorage] Toggling like for post ${postId}`);
+    const result = await dbClient.community.toggleLike(postId, user.email);
+    console.log(`[communityStorage] Like toggle result:`, result);
+    return result?.liked || false;
   } catch (e) {
-    console.error('Error toggling like:', e);
+    console.error('[communityStorage] Error toggling like:', e);
     throw e;
   }
 }
 
 export async function addComment(params: { postId: string; user: { email: string; name: string }; text: string }): Promise<void> {
   try {
-    const res = await fetch(`${API_BASE}/community/${params.postId}/comment`, {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ 
-        userEmail: params.user.email, 
-        userName: params.user.name, 
-        text: params.text 
-      }),
+    console.log(`[communityStorage] Adding comment to post ${params.postId}`);
+    await dbClient.community.addComment(params.postId, {
+      userEmail: params.user.email,
+      userName: params.user.name,
+      text: params.text,
     });
-    if (!res.ok) {
-      throw new Error('Failed to add comment');
-    }
+    console.log(`[communityStorage] Comment added successfully`);
   } catch (e) {
-    console.error('Error adding comment:', e);
+    console.error('[communityStorage] Error adding comment:', e);
     throw e;
   }
 }

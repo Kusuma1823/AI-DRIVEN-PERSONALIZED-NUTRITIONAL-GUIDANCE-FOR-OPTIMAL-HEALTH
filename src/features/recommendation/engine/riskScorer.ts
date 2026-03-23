@@ -34,7 +34,7 @@ export function computePersonalizedAnalysis(params: {
 
   // BMI is user-provided (not in dataset). Use it as an additional personalization factor.
   // This keeps the app "health-tech" without assuming any missing nutrition fields.
-  const bmi = user.bmi;
+  const bmi = user.bmi ?? 0;
   if (bmi > 0) {
     if (bmi >= 30) {
       score += 18;

@@ -10,11 +10,23 @@ export function loadUserProfileInput(email: string): UserProfileInput | null {
   try {
     const raw = localStorage.getItem(profileKey(email));
     if (!raw) return null;
-    const parsed = JSON.parse(raw) as UserProfileInput;
+    const parsed = JSON.parse(raw) as Partial<UserProfileInput>;
     // Minimal shape validation: allergies/conditions arrays are required for the recommendation engine.
     if (!Array.isArray(parsed.allergies)) return null;
     if (!Array.isArray(parsed.selectedHealthConditions)) return null;
-    return parsed;
+    
+    // Merge with defaults to ensure all fields are present (handles old profiles missing bmi, etc.)
+    const defaultProfile = defaultUserProfileInput();
+    const merged: UserProfileInput = {
+      age: parsed.age ?? defaultProfile.age,
+      gender: parsed.gender ?? defaultProfile.gender,
+      heightCm: parsed.heightCm ?? defaultProfile.heightCm,
+      weightKg: parsed.weightKg ?? defaultProfile.weightKg,
+      bmi: parsed.bmi ?? defaultProfile.bmi,
+      allergies: parsed.allergies ?? defaultProfile.allergies,
+      selectedHealthConditions: parsed.selectedHealthConditions ?? defaultProfile.selectedHealthConditions,
+    };
+    return merged;
   } catch {
     return null;
   }

@@ -27,6 +27,12 @@ export function FoodDetailsPage() {
 
   const repo = useMemo(() => new FoodRepository({ mode: "json" }), []);
 
+  // Load user profile - will trigger re-analysis when it changes
+  const session = useMemo(() => getSession(), []);
+  const userProfile = useMemo(() => {
+    return session?.email ? loadUserProfileInput(session.email) ?? defaultUserProfileInput() : defaultUserProfileInput();
+  }, [session?.email]);
+
   const [food, setFood] = useState<FoodDatasetRecord | null>(null);
   const [ingredients, setIngredients] = useState<FoodIngredientRecord[]>([]);
   const [status, setStatus] = useState<RiskStatus>("Caution");
@@ -46,10 +52,8 @@ export function FoodDetailsPage() {
         if (!f) throw new Error("Food not found in dataset.");
 
         const ing = await repo.getIngredientsForFood(foodId);
-        const session = getSession();
-        const user: UserProfileInput = session?.email ? loadUserProfileInput(session.email) ?? defaultUserProfileInput() : defaultUserProfileInput();
 
-        const analysis = computePersonalizedAnalysis({ food: f, ingredients: ing, user });
+        const analysis = computePersonalizedAnalysis({ food: f, ingredients: ing, user: userProfile });
         if (cancelled) return;
 
         const sameCategory = await repo.getFoodsByCategory(f.category);
@@ -86,7 +90,7 @@ export function FoodDetailsPage() {
     return () => {
       cancelled = true;
     };
-  }, [foodId, repo]);
+  }, [foodId, repo, userProfile]);
 
   const tone = statusTone(status);
 

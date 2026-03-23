@@ -23,6 +23,8 @@ export function CommunityPage() {
   const session = useMemo(() => getSession(), []);
   const [posts, setPosts] = useState<CommunityPost[]>([]);
   const [viewPostId, setViewPostId] = useState<string | null>(null);
+  const [error, setError] = useState<string | null>(null);
+  const [likeError, setLikeError] = useState<Record<string, string>>({});
 
   const [caption, setCaption] = useState("");
   const [imageDataUrl, setImageDataUrl] = useState<string | undefined>(undefined);
@@ -32,10 +34,12 @@ export function CommunityPage() {
   useEffect(() => {
     async function loadPosts() {
       try {
+        setError(null);
         const posts = await loadCommunityPosts();
         setPosts(posts);
       } catch (e) {
-        console.error("Error loading community posts:", e);
+        console.error("[CommunityPage] Error loading community posts:", e);
+        setError("Failed to load posts. Please try again.");
         setPosts([]);
       }
     }
@@ -60,10 +64,12 @@ export function CommunityPage() {
 
   async function refresh() {
     try {
+      setError(null);
       const updated = await loadCommunityPosts();
       setPosts(updated);
     } catch (e) {
-      console.error("Error refreshing posts:", e);
+      console.error("[CommunityPage] Error refreshing posts:", e);
+      setError("Failed to refresh posts.");
     }
   }
 
@@ -87,6 +93,7 @@ export function CommunityPage() {
     if (!text) return;
 
     setCreating(true);
+    setError(null);
     try {
       await addCommunityPost({
         authorName: session.name,
@@ -99,7 +106,8 @@ export function CommunityPage() {
       const updated = await loadCommunityPosts();
       setPosts(updated);
     } catch (e) {
-      console.error('Error submitting post:', e);
+      console.error('[CommunityPage] Error submitting post:', e);
+      setError("Failed to post. Please try again.");
     } finally {
       setCreating(false);
     }
@@ -108,10 +116,12 @@ export function CommunityPage() {
   async function onLike(postId: string) {
     if (!session) return;
     try {
+      setLikeError((prev) => ({ ...prev, [postId]: "" }));
       await toggleLike(postId, { email: session.email, name: session.name });
       await refresh();
     } catch (e) {
-      console.error("Error liking post:", e);
+      console.error("[CommunityPage] Error liking post:", e);
+      setLikeError((prev) => ({ ...prev, [postId]: "Failed to like post" }));
     }
   }
 
@@ -120,11 +130,13 @@ export function CommunityPage() {
     const text = (commentTextByPostId[postId] ?? "").trim();
     if (!text) return;
     try {
+      setError(null);
       await addComment({ postId, user: { email: session.email, name: session.name }, text });
       setCommentTextByPostId((prev) => ({ ...prev, [postId]: "" }));
       await refresh();
     } catch (e) {
-      console.error("Error adding comment:", e);
+      console.error("[CommunityPage] Error adding comment:", e);
+      setError("Failed to add comment. Please try again.");
     }
   }
 
@@ -138,6 +150,15 @@ export function CommunityPage() {
   return (
     <PageShell>
       <div className="mx-auto max-w-6xl px-4 pb-16 pt-8">
+        {error && (
+          <div className="mb-4 rounded-lg border border-rose-200 bg-rose-50 p-4 text-sm text-rose-800">
+            {error}
+            <button onClick={() => setError(null)} className="ml-2 font-semibold underline">
+              Dismiss
+            </button>
+          </div>
+        )}
+
         <div className="flex flex-col gap-6 lg:flex-row lg:items-start lg:justify-between">
           <div>
             <div className="text-sm font-semibold text-gray-600">Healthy community</div>
@@ -236,6 +257,12 @@ export function CommunityPage() {
                     </div>
                     <div className="text-xs text-gray-600">{p.comments.length} comment(s)</div>
                   </div>
+
+                  {likeError[p.id] && (
+                    <div className="mt-3 rounded-lg border border-rose-200 bg-rose-50 p-2 text-xs text-rose-700">
+                      {likeError[p.id]}
+                    </div>
+                  )}
 
                   <div className="mt-4">
                     <div className="text-sm font-semibold text-ink-900">Add a comment</div>

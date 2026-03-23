@@ -30,19 +30,28 @@ export async function signUp(params: { name: string; email: string; password: st
     const emailKey = params.email.trim().toLowerCase();
     if (!emailKey) return { ok: false, message: "Email is required." };
     
+    console.log("[signUp] Attempting to sign up user:", emailKey);
+    
     const result = await dbClient.auth.signup(
       params.name.trim() || "User",
       emailKey,
       params.password
     );
     
+    console.log("[signUp] API Response:", result);
+    
     if (result.ok) {
+      console.log("[signUp] Signup successful");
       return { ok: true };
     } else {
-      return { ok: false, message: result.data?.error || "Registration failed." };
+      const errorMsg = result.data?.error || result.data?.message || "Registration failed.";
+      console.log("[signUp] Signup failed:", errorMsg);
+      return { ok: false, message: errorMsg };
     }
   } catch (error) {
-    return { ok: false, message: "Registration error. Please try again." };
+    console.error("[signUp] Signup error:", error);
+    const errorMessage = error instanceof Error ? error.message : "Unknown error";
+    return { ok: false, message: `Registration error: ${errorMessage}` };
   }
 }
 
@@ -63,19 +72,21 @@ export async function signIn(params: { email: string; password: string }): Promi
     const emailKey = params.email.trim().toLowerCase();
     const result = await dbClient.auth.signin(emailKey, params.password);
     
-    if (result.ok && result.data.userId) {
+    if (result.ok && result.data?.userId) {
       const session: Session = {
         userId: result.data.userId,
         email: emailKey,
-        name: params.email, // We'll get the actual name from user record when needed
+        name: result.data.user?.name || params.email,
         createdAt: Date.now(),
       };
       localStorage.setItem(SESSION_KEY, JSON.stringify(session));
       return { ok: true };
     } else {
-      return { ok: false, message: result.data?.error || "Invalid email or password." };
+      const errorMsg = result.data?.error || result.data?.message || "Invalid email or password.";
+      return { ok: false, message: errorMsg };
     }
   } catch (error) {
+    console.error("Sign in error:", error);
     return { ok: false, message: "Sign in error. Please try again." };
   }
 }

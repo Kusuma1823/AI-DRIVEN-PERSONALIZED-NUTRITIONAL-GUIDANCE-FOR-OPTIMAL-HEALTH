@@ -19,6 +19,12 @@ export function RecommendationAnalysisPage() {
   const repo = useMemo(() => new FoodRepository({ mode: "json" }), []);
   const facade = useMemo(() => new RecommendationFacade(repo), [repo]);
 
+  // Load user profile - will trigger re-analysis when it changes
+  const session = useMemo(() => getSession(), []);
+  const userProfile = useMemo(() => {
+    return session?.email ? loadUserProfileInput(session.email) ?? defaultUserProfileInput() : defaultUserProfileInput();
+  }, [session?.email]);
+
   const [result, setResult] = useState<FoodAnalysisResult | null>(null);
   const [loading, setLoading] = useState<boolean>(true);
   const [error, setError] = useState<string | null>(null);
@@ -43,11 +49,9 @@ export function RecommendationAnalysisPage() {
           throw new Error("Invalid food id in URL.");
         }
 
-        const session = getSession();
-        const user = session?.email ? loadUserProfileInput(session.email) ?? defaultUserProfileInput() : defaultUserProfileInput();
         const analysis = await facade.analyzeFood({
           foodId,
-          user,
+          user: userProfile,
           alternativesLimit: 4,
         });
 
@@ -63,7 +67,7 @@ export function RecommendationAnalysisPage() {
     return () => {
       cancelled = true;
     };
-  }, [foodId, facade]);
+  }, [foodId, facade, userProfile]);
 
   return (
     <PageShell>

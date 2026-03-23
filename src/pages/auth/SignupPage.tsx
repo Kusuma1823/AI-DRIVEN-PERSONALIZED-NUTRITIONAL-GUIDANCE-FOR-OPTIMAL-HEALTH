@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { useNavigate, Link } from "react-router-dom";
 import { PageShell } from "../../components/layout/PageShell";
 import { Card } from "../../components/ui/Card";
@@ -15,6 +15,11 @@ export function SignupPage() {
   const [confirm, setConfirm] = useState<string>("");
   const [error, setError] = useState<string | null>(null);
   const [submitting, setSubmitting] = useState(false);
+
+  // Clear errors when component mounts
+  useEffect(() => {
+    setError(null);
+  }, []);
 
   function validate() {
     if (!email.trim()) return "Email is required.";
